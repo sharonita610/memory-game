@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="Ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐬 해마 키우기</title>
+
+    <link rel="stylesheet" href="/common/css/common.css">
+    <link rel="stylesheet" href="/common/css/index.css">
+
+
+    <style>
+        #wrraper {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /*
+            header
+        */
+
+        #header {
+            background: rgba(50, 50, 50, 0.5);
+            height: 200px;
+        }
+
+
+
+        /*
+            main
+        */
+
+
+        #main {
+            background: rgba(100, 100, 100, 0.1);
+            display: flex;
+            flex-direction: row;
+            height: 800px;
+        }
+
+        #main .banner1 {
+            background: rgba(100, 100, 100, 0.5);
+            width: 10%;
+        }
+
+        #main .contains {
+            background: rgba(50, 50, 50, 0.5);
+            width: 100%;
+        }
+
+        #main .banner2 {
+            background: rgba(100, 100, 100, 0.5);
+            width: 10%;
+        }
+
+
+
+        /*
+            footer
+        */
+
+        #footer {
+            background: rgba(50, 50, 50, 0.5);
+
+            height: fit-content;
+        }
+
+        #footer .contains {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+
+        }
+
+        #footer .contains .title {
+            background: rgba(100, 100, 100, 0.1);
+
+
+            height: 80%;
+            width: 100%;
+        }
+
+        #footer .contains .title .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            height: 100%;
+        }
+
+        #footer .contains .title .nav .game {
+            width: 100%;
+            height: 100%;
+
+            position: relative;
+
+        }
+
+        #footer .contains .title .nav .game .img {
+            border: 1px solid white;
+            width: 100%;
+            height: 80%;
+
+            position: relative;
+        }
+
+        #footer .contains .title .nav .game .img .common {
+
+            width: 150px;
+            height: 150px;
+
+
+            position: absolute;
+            top: -35px;
+            right: 130px;
+
+            background: url("/main/img/footer-img.png") no-repeat center / cover;
+
+            /* 무한 회전 애니메이션 */
+            /*
+            rotate_image 라는 이름을 가진 키프레임을 실행시켜라
+            6s : 6초에 한번씩 (animation-duration)
+            linear : 동일한 속도로 (animation-timing-function)
+            */
+            animation: rotate_image 6s linear infinite;
+            transform-origin: 50% 50%;
+        }
+
+
+
+        #footer .contains .title .nav .game .sub-title {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #fff;
+
+            position: relative;
+            top: -100px;
+
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        #footer .contains .title .nav .game .sub-title span {
+            color: #000;
+            font-size: 0.7em;
+            display: block;
+        }
+
+
+
+
+        #footer .contains .copy-right {
+            background: rgba(181, 187, 181, 0.1);
+
+            width: 100%;
+            height: 20%;
+
+            text-align: center;
+            padding: 15px;
+            font-weight: 700;
+            font-size: 0.8em;
+            color: #000;
+        }
+
+
+
+        /* 무한 회전 애니메이션 */
+        @keyframes rotate_image {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrraper">
+        <header id="header">
+            <div class="contains">
+                <h1 class="title">information</h1>
+                <div class="title-img">img1</div>
+                <div class="sub-img">img2</div>
+            </div>
+
+        </header>
+
+        <div id="main">
+            <div class="banner1">banner1</div>
+            <div class="contains"></div>
+            <div class="banner2">banner2</div>
+        </div>
+
+        <footer id="footer">
+            <div class="contains">
+
+                <div class="title">
+                    <ul class="nav">
+                        <li class="game card">
+                            <div class="img"><a href="#" class="common img1"></a></div>
+                            <h3 class="sub-title">카드<span>총 20개의 카드를 기억해보자</span></h3>
+                        </li>
+                        <li class="game baseball">
+                            <div class="img img2"><a href="#" class="common img2"></a></div>
+                            <h3 class="sub-title">야구<span>0~9까지 총 10단계!!</span></h3>
+                        </li>
+                        <li class="game bridge">
+                            <div class="img img3"><a href="#" class="common img3"></a></div>
+                            <h3 class="sub-title">다리<span>시간 제한없는 기억력 게임!</span></h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="copy-right">© 2023. 03.</h3>
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
