@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐬 해마 키우기</title>
+    <title>해마 키우기</title>
 
     <link rel="stylesheet" href="/common/css/common.css">
     <link rel="stylesheet" href="/common/css/index.css">
 
+    <!-- tap 아이콘 이미지 -->
+    <link rel="icon" href="/main/img/document.png" />
+    <link rel="apple-touch-icon" href="/main/img/document.png" />
+    <!--  -->
 
+
+    <!-- 추후에 header.css / main.css / footer.css 로 따로 관리 -->
     <style>
         #wrraper {
             display: flex;
@@ -25,7 +31,65 @@
         #header {
             background: rgba(50, 50, 50, 0.5);
             height: 200px;
+
         }
+
+        #header .contains {
+            display: flex;
+            align-items: center;
+
+            flex-direction: row;
+            height: 100%;
+        }
+
+        #header .contains .title {
+            background: #e5e9167a;
+
+
+
+            height: 100%;
+            width: 60%;
+        }
+
+        #header .contains .title-img {
+            background: #dc31bc96;
+
+            height: 100%;
+            width: 25%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header .contains .title-img .img1 {
+
+            background: #cc5252;
+            border-radius: 15%;
+
+
+            width: 150px;
+            height: 150px;
+            /* 무한 회전 애니메이션 */
+            /*
+            rotate_image 라는 이름을 가진 키프레임을 실행시켜라
+            10s : 10초에 한번씩 (animation-duration)
+            linear : 동일한 속도로 (animation-timing-function)
+            */
+            animation: rotate_image 10s linear infinite;
+            transform-origin: 50% 50%;
+            /* ----------------------- */
+        }
+
+        #header .contains .sub-img {
+            background: #73ee4a36;
+
+            height: 100%;
+            width: 15%;
+        }
+
+
+
 
         /*
             end header ----------------------------------------->
@@ -37,7 +101,6 @@
             begin main ----------------------------------------->
         */
 
-
         #main {
             background: rgba(100, 100, 100, 0.1);
             display: flex;
@@ -45,20 +108,97 @@
             height: 800px;
         }
 
-        #main .banner1 {
-            background: rgba(100, 100, 100, 0.5);
-            width: 10%;
+        #main .contains {
+            display: flex;
+
+            align-items: center;
+            padding: 50px;
         }
 
         #main .contains {
             background: rgba(50, 50, 50, 0.5);
+            width: 80%;
+        }
+
+
+        #main .contains .contents {
+            background: rgba(100, 100, 100, 0.5);
+            border-radius: 50px;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+
+        #main .contains .contents .input {
+            background: rgba(20, 171, 93, 0.5);
+            width: 100%;
+            height: 100px;
+        }
+
+        #main .contains .contents .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 80%;
+
+        }
+
+        #main .contains .contents .nav .game {
+            border: 1px solid rgb(226, 60, 60);
+
+            width: 100%;
+            height: 100%;
+        }
+
+        #main .contains .contents .nav-sub {
+            width: 100%;
+            height: 20%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #main .contains .contents .nav-sub .btn {
+            height: 100%;
             width: 100%;
         }
+
+        #main .contains .contents .nav-sub .start-btn {
+            background: rgba(186, 111, 111, 0.5);
+
+        }
+
+        #main .contains .contents .nav-sub .info-btn {
+            background: rgba(50, 50, 50, 0.5);
+        }
+
+
+        /* 광고 --------------- */
 
         #main .banner2 {
             background: rgba(100, 100, 100, 0.5);
             width: 10%;
         }
+
+        #main .banner1 {
+            background: rgba(100, 100, 100, 0.5);
+            width: 10%;
+        }
+
+        /* 광고 --------------- */
+
+
+
 
         /*
             end main ----------------------------------------->
@@ -93,7 +233,6 @@
 
         #footer .contains .title .nav {
             display: flex;
-            flex-direction: row;
             align-items: center;
 
             height: 100%;
@@ -104,7 +243,6 @@
             height: 100%;
 
             position: relative;
-
         }
 
         #footer .contains .title .nav .game .img {
@@ -134,6 +272,11 @@
             */
             animation: rotate_image 6s linear infinite;
             transform-origin: 50% 50%;
+            /* ----------------------- */
+        }
+
+        #footer .contains .title .nav .game .img .common:hover {
+            transform: scale(1.2);
         }
 
         #footer .contains .title .nav .game .sub-title {
@@ -190,8 +333,10 @@
     <div id="wrraper">
         <header id="header">
             <div class="contains">
-                <h1 class="title">information</h1>
-                <div class="title-img">img1</div>
+                <div class="title-img">
+                    <div class="img1">돌아가는 이미지</div>
+                </div>
+                <h1 class="title">header title</h1>
                 <div class="sub-img">img2</div>
             </div>
 
@@ -199,7 +344,25 @@
 
         <div id="main">
             <div class="banner1">banner1</div>
-            <div class="contains"></div>
+
+            <div class="contains">
+                <div class="contents">
+                    <div class="input">이름 나이 입력 받기</div>
+
+                    <ul class="nav">
+                        <li class="game card"><a href="#">card</a>
+                        <li class="game baseball"><a href="#">baseball</a>
+                        <li class="game bridge"><a href="#">bridge</a>
+                    </ul>
+
+                    <ul class="nav-sub">
+                        <li class="btn start-btn">start-btn</li>
+                        <li class="btn info-btn">info-btn</li>
+                    </ul>
+
+                </div>
+            </div>
+
             <div class="banner2">banner2</div>
         </div>
 
