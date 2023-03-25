@@ -105,7 +105,7 @@
             background: rgba(100, 100, 100, 0.1);
             display: flex;
             flex-direction: row;
-            height: 800px;
+            height: 1800px;
         }
 
         #main .contains {
@@ -205,14 +205,23 @@
         */
 
 
+
+
+
+
+
+
+
+
+
         /*
            begin footer ----------------------------------------->
         */
 
         #footer {
-            background: rgba(50, 50, 50, 0.5);
-
             height: fit-content;
+            background: url("/main/img/footer-back.png");
+            background-position-y: 900px;
         }
 
         #footer .contains {
@@ -224,9 +233,6 @@
         }
 
         #footer .contains .title {
-            background: rgba(100, 100, 100, 0.1);
-
-
             height: 80%;
             width: 100%;
         }
@@ -236,7 +242,10 @@
             align-items: center;
 
             height: 100%;
+            background-position-y: 650px;
+            /* animation: displace 2s infinite linear alternate; */
         }
+
 
         #footer .contains .title .nav .game {
             width: 100%;
@@ -245,34 +254,76 @@
             position: relative;
         }
 
+        #footer .contains .title .nav .game .info {
+            background: rgb(233, 233, 233);
+            border: 1px solid #000;
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            width: 250px;
+            height: 250px;
+            line-height: 1.4;
+
+            position: absolute;
+            top: -120%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: none;
+        }
+
+        #footer .contains .title .nav .game .info .info-back {
+            background: url("main/img/footer-info1.png") no-repeat center/cover;
+            height: 100%;
+            width: 100%;
+
+            font-weight: 700;
+            color: #000000;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+            padding: 80px 30px;
+            text-align: center;
+
+        }
+
+
+        #footer .contains .title .nav .game .img1:hover~.info1 {
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+        #footer .contains .title .nav .game .img2:hover~.info2 {
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+        #footer .contains .title .nav .game .img3:hover~.info3 {
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+
+
+
+
         #footer .contains .title .nav .game .img {
             width: 100%;
             height: 80%;
 
             position: relative;
+
         }
 
         #footer .contains .title .nav .game .img .common {
-
             width: 150px;
             height: 150px;
 
-
             position: absolute;
-            top: -35px;
-            right: 130px;
+            top: 40%;
+            left: 50%;
 
-            background: url("/main/img/footer-img.png") no-repeat center / cover;
-
-            /* 무한 회전 애니메이션 */
-            /*
-            rotate_image 라는 이름을 가진 키프레임을 실행시켜라
-            6s : 6초에 한번씩 (animation-duration)
-            linear : 동일한 속도로 (animation-timing-function)
-            */
-            animation: rotate_image 6s linear infinite;
-            transform-origin: 50% 50%;
-            /* ----------------------- */
+            background: url("/main/img/footer-nav.png") no-repeat center / cover;
+            animation: rotate_image_footer 12s infinite Linear;
         }
 
         #footer .contains .title .nav .game .img .common:hover {
@@ -290,7 +341,6 @@
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 
             line-height: 1.2;
-
         }
 
         #footer .contains .title .nav .game .sub-title span {
@@ -313,16 +363,88 @@
         }
 
 
+        #footer .contains .gnb .help {
+            background: url("/main/img/footer-gnb.png") no-repeat center/cover;
+            border-radius: 50%;
+
+            position: fixed;
+            top: 80%;
+            right: 0%;
+            transform: translate(-50%, -50%);
+
+            width: 50px;
+            height: 50px;
+
+        }
+
+
+
+        /*
+           end footer ----------------------------------------->
+        */
+
+
+
+
+
+
+
+        /*
+           begin footer animation ---------------------------------->
+        */
 
         /* 무한 회전 애니메이션 */
+        @keyframes rotate_image_footer {
+            0% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+
         @keyframes rotate_image {
             100% {
                 transform: rotate(360deg);
             }
         }
 
+        /* animation: transY 2s ease-in-out infinite; */
+        @keyframes transY {
+            0% {
+                /*  // 이 top 기준으로 400px 내려간 곳에서 시작할거다 
+                 // 처음에는 가려놓고 */
+                transform: translateY(400px);
+                opacity: 0;
+            }
+
+            100% {
+                /*// 마지막에 슬슬 보여주기 // 그리고 도착지는 원래 지점 */
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes displace {
+            0% {
+
+                background-position: center 0;
+            }
+
+            50% {
+                background-position: center 600px
+            }
+
+            100% {
+                background-position: center 1200px
+            }
+        }
+
+
         /*
-           end footer ----------------------------------------->
+           end footer animation ---------------------------------->
         */
     </style>
 
@@ -371,21 +493,42 @@
                 <div class="title">
                     <ul class="nav">
                         <li class="game card">
-                            <div class="img"><a href="#" class="common img1"></a></div>
+                            <div class="img img1"><a href="#" class="common"></a></div>
                             <h3 class="sub-title">카드<span>총 20개의 카드를<br>기억해보자</span></h3>
+                            <div class="info info1">
+                                <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정</div>
+                            </div>
                         </li>
                         <li class="game baseball">
-                            <div class="img img2"><a href="#" class="common img2"></a></div>
-                            <h3 class="sub-title">야구<span>총 10단계의<br>숫자 야구 게임!!</span></h3>
+                            <div class="img img2"><a href="#" class="common"></a></div>
+                            <h3 class="sub-title">야구<span>총 7단계의<br>숫자 야구 게임!!</span></h3>
+                            <div class="info info2">
+                                <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정</div>
+                            </div>
                         </li>
                         <li class="game bridge">
-                            <div class="img img3"><a href="#" class="common img3"></a></div>
+                            <div class="img img3"><a href="#" class="common"></a></div>
                             <h3 class="sub-title">다리<span>시간 제한없는<br>기억력 게임!</span></h3>
+                            <div class="info info3">
+                                <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정</div>
+                            </div>
                         </li>
                     </ul>
+
                 </div>
 
+
+                <div class="gnb">
+                    <div class="help">
+                    </div>
+                </div>
+
+
                 <h3 class="copy-right">© 2023. 03 Memory-Project</h3>
+
+
+
+
 
             </div>
         </footer>
