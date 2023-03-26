@@ -29,8 +29,8 @@
         */
 
         #header {
-            background: rgba(50, 50, 50, 0.5);
-            height: 200px;
+            background: url("/main/img/header-title.png") no-repeat center/cover;
+            height: 300px;
 
         }
 
@@ -105,7 +105,7 @@
             background: rgba(100, 100, 100, 0.1);
             display: flex;
             flex-direction: row;
-            height: 1800px;
+            height: 950px;
         }
 
         #main .contains {
@@ -256,7 +256,7 @@
 
         #footer .contains .title .nav .game .info {
             background: rgb(233, 233, 233);
-            border: 1px solid #000;
+
             border-radius: 30px;
 
             overflow: hidden;
@@ -274,16 +274,15 @@
         }
 
         #footer .contains .title .nav .game .info .info-back {
-            background: url("main/img/footer-info1.png") no-repeat center/cover;
+            background: url("main/img/footer-info.png") no-repeat center/cover;
             height: 100%;
             width: 100%;
 
             font-weight: 700;
             color: #000000;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-            padding: 80px 30px;
+            padding: 20px;
             text-align: center;
-
         }
 
 
@@ -304,14 +303,11 @@
 
 
 
-
-
         #footer .contains .title .nav .game .img {
             width: 100%;
             height: 80%;
 
             position: relative;
-
         }
 
         #footer .contains .title .nav .game .img .common {
@@ -365,6 +361,7 @@
 
         #footer .contains .gnb .help {
             background: url("/main/img/footer-gnb.png") no-repeat center/cover;
+
             border-radius: 50%;
 
             position: fixed;
@@ -375,9 +372,115 @@
             width: 50px;
             height: 50px;
 
+            display: flex;
+            justify-content: center;
+        }
+
+        #footer .contains .gnb .help:hover .title {
+            display: block;
+        }
+
+        #footer .contains .gnb .help .title {
+            position: absolute;
+
+            top: -250%;
+            left: -200%;
+            transform: translate(-50%, -50%);
+
+            /* background: url("/main/img/footer-gnb-back1.png") no-repeat center / cover; */
+
+            width: 200px;
+            height: 350px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            display: none;
+        }
+
+        #footer .contains .gnb .help .title .nav {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: cneter;
+            align-items: center;
+
+            border: 1px solid red;
+        }
+
+        #footer .contains .gnb .help .title .nav .info {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: cneter;
+            align-items: center;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .menu {
+            width: 60px;
+            height: 60px;
+
+            align-items: center;
+            text-align: center;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .img1 {
+            background: url("main/img/footer-call.png") no-repeat center/cover;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .img2 {
+            background: url("main/img/footer-email.png") no-repeat center/cover;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .img3 {
+            background: url("main/img/footer-instagram.png") no-repeat center/cover;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .img4 {
+            background: url("main/img/footer-facebook.png") no-repeat center/cover;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .img5 {
+            background: url("main/img/footer-web.png") no-repeat center/cover;
         }
 
 
+
+        #footer .contains .gnb .help .title .nav .info .img {
+            border: 1px solid rgb(48, 120, 203);
+            width: 50%;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .back-img {
+            /* background: url("/main/img/footer-navback7.png") no-repeat center / cover;
+
+            width: 150px;
+            height: 80px;
+
+            position: absolute;
+
+            transform: translate(-50%, -50%) scaleX(-1);
+            left: 75%; */
+        }
+
+        #footer .contains .gnb .help .title .nav .info .back-img1 {
+            top: 20%;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .back-img2 {
+            top: 60%;
+        }
+
+        #footer .contains .gnb .help .title .nav .info .back-img3 {
+            top: 100%;
+        }
 
         /*
            end footer ----------------------------------------->
@@ -520,15 +623,37 @@
 
                 <div class="gnb">
                     <div class="help">
+                        <div class="title">
+                            <ul class="nav">
+                                <li class="info">
+                                    <a href="#" class="menu img1"></a>
+                                    <div class="back-img back-img1">010-1234-1234</div>
+                                </li>
+
+                                <li class="info">
+                                    <a href="#" class="menu img2"></a>
+                                    <div class="back-img back-img2">my@mg.com</div>
+                                </li>
+
+                                <li class="info">
+                                    <a href="#" class="menu img3"></a>
+                                    <div class="back-img back-img3">@memory-game</div>
+                                </li>
+                                <li class="info">
+                                    <a href="#" class="menu img4"></a>
+                                    <div class="back-img back-img4">@memory-game</div>
+                                </li>
+                                <li class="info">
+                                    <a href="#" class="menu img5"></a>
+                                    <div class="back-img back-img5">memory.com</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
 
                 <h3 class="copy-right">© 2023. 03 Memory-Project</h3>
-
-
-
-
 
             </div>
         </footer>
