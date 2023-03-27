@@ -237,11 +237,11 @@
     text-align: center;
 }
 
-#footer .contains .gnb .help .title .nav .info .img1 {
+#footer .contains .gnb .help .title .nav .info .imleft {
     background: url("main/img/footer-call.png") no-repeat center/cover;
 }
 
-#footer .contains .gnb .help .title .nav .info .img2 {
+#footer .contains .gnb .help .title .nav .info .imright {
     background: url("main/img/footer-email.png") no-repeat center/cover;
 }
 
@@ -264,11 +264,11 @@
     width: 50%;
 }
 
-#footer .contains .gnb .help .title .nav .info .back-img1 {
+#footer .contains .gnb .help .title .nav .info .back-imleft {
     top: 20%;
 }
 
-#footer .contains .gnb .help .title .nav .info .back-img2 {
+#footer .contains .gnb .help .title .nav .info .back-imright {
     top: 60%;
 }
 
