@@ -83,7 +83,7 @@
 
 #main .contains .contents .main-game .game-nav .nav .side .round {
     background: url("/baseball/img/baseball-round1.png") no-repeat center/cover;
-    background-size: 40%;
+    background-size: 20%;
 
     height: 20%;
 }
@@ -162,7 +162,9 @@
     background-position-y: 10px;
 
     height: 70%;
-    width: 100%;
+    width: 650px;
+
+    border: 1px solid red;
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .input-btn {
