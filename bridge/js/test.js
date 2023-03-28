@@ -1,5 +1,3 @@
-
-
 glasses = document.getElementsByClassName('glass');
 left = document.getElementsByClassName('left');
 right = document.getElementsByClassName('right');
@@ -11,7 +9,6 @@ imagesOrder = [[]];
 counter = 0;
 won = true;
 index = 0;
-
 
 // create a function to enable buttons
 function enableButton()
@@ -49,7 +46,6 @@ function getRandomImages()
 
   }
 }
-
 
 function stepInThis(pic)
 {
