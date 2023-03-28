@@ -92,6 +92,9 @@
     height: 80%;
     padding: 20px;
     border: 1px solid blue;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -131,6 +134,10 @@
 
     /* height: 100%; */
     text-align: center;
+
+    width: fit-content;
+
+    margin: 0px 15px;
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .result {
@@ -156,12 +163,44 @@
 
 }
 
-#main .contains .contents .main-game .game-nav .nav .title .img {
+
+#main .contains .contents .main-game .game-nav .nav .title .box {
+
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main .contains .contents .main-game .game-nav .nav .title .box .btn {
+    width: 15%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+#main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn {
+    border: 1px solid red;
+    height: 80px;
+
+    text-align: center;
+
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .title .box .img {
     background: url("baseball/img/baseball-back.png") no-repeat center/cover;
     background-size: 75%;
     background-position-y: 10px;
 
-    height: 70%;
+    height: 100%;
     width: 650px;
 
     border: 1px solid red;
@@ -172,7 +211,6 @@
 
     height: 10%;
     width: 100%;
-
 
     display: flex;
     flex-direction: center;
@@ -196,7 +234,7 @@
 
 }
 
-#main .contains .contents .main-game .game-nav .nav .title .input-btn li * {
+#main .contains .contents .main-game .game-nav .nav .title .input-btn li {
     width: 50px;
 }
 
@@ -260,21 +298,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  */
 
 #main .contains .contents .main-game .game-nav .nav:hover {
@@ -329,10 +352,7 @@ button {
     cursor: pointer;
 }
 
-
-
 /* 광고 --------------- */
-
 
 #main .banner1 {
     width: 15%;
@@ -342,7 +362,6 @@ button {
 
 #main .banner1 img {
     display: block;
-
 
     margin-bottom: 13px;
     width: 100%;
@@ -368,3 +387,14 @@ button {
 }
 
 /* 광고 --------------- */
+
+
+
+
+
+
+
+/* event tag */
+#hide {
+    visibility: hidden !important;
+}
