@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="Ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해마 키우기</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="/common/css/common.css">
+
+    <!-- tap 아이콘 이미지 -->
+    <link rel="icon" href="/main/img/document.png" />
+    <link rel="apple-touch-icon" href="/main/img/document.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="index-header.css">
+    <link rel="stylesheet" href="index-baseball.css">
+    <link rel="stylesheet" href="index-footer.css">
+    <link rel="stylesheet" href="index-name-input/index-login.css">
+    <link rel="stylesheet" href="index-name-input/index-body-main-game.css">
+    <link rel="stylesheet" href="main-result-button/main-result-btn.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <link href="/index-banner/index-banner.js">
+
+</head>
+
+<body>
+    <div id="wrraper">
+        <header id="header">
+            <div class="contains">
+                <div class="title-img">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                </div>
+                <div class="title">
+                    <h1><em id="green">기억력</em> 게임으로<br>
+                        내 안의 <em>해마</em> 키우기
+                    </h1>
+                    <div id="logoImage"></div>
+                </div>
+                <div class="sub-img">
+                </div>
+            </div>
+        </header>
+
+        <!-- main body 시작-->
+        <div id="main">
+            <!-- banner 1 begin-->
+            <div class="banner1" id="left-banner">
+            </div>
+            <!-- banner 1 end-->
+            <div class="contains">
+                <div class="contents">
+                    <!-- index login finish -->
+                    <div class="main-game">
+                        <div class="game-nav">
+                            <ul class="nav">
+
+                                <div class="side">
+                                    <div class="round"></div>
+                                    <ul id="info" class="score-info">
+                                        <!-- !! 스크립트로 값 추가 -->
+                                    </ul>
+                                </div>
+
+                                <div class="title">
+                                    <ul id="input-view" class="input">
+                                        <!-- !! 입력한 값 띄워주기 -->
+                                    </ul>
+                                    <ul class="result">
+                                        <li>결과 값 뿌려주기</li>
+                                    </ul>
+
+                                    <ul class="box">
+                                        <li class="btn">
+                                            <button id="result-btn" class="common-btn">결과 보기</button>
+                                        </li>
+                                        <li class="img"></li>
+                                        <li class="btn">
+                                            <button id="reset-btn" class="common-btn">다시 담기</button>
+                                        </li>
+                                    </ul>
+
+                                    <ul id="input-btn-box" class="input-btn">
+                                        <!-- !! 스크립트로 태그 생성 -->
+                                    </ul>
+                                </div>
+
+                                <div class="btn-box">
+                                    <div class="back-btn">
+                                        <a href="index.html">back-btn</a>
+                                    </div>
+                                    <div class="start-btn">
+                                        <a href="#">start-btn</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="game-nav-sub">
+                            <ul class="nav-sub">
+                                <li class="btn">
+                                    <button class="start-btn start-btn">
+                                        <span>클릭!</span><span>결과 확인</span>
+                                    </button>
+                                </li>
+                                <li class="btn">
+                                    <button class="start-btn info-btn">
+                                        <span>클릭!</span><span>게임설명</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="banner2">
+            </div>
+        </div>
+
+        <!-- footer 시작 -->
+        <footer id="footer">
+            <div class="contains">
+                <div class="title">
+                    <ul class="nav">
+                        <li class="game card">
+                            <div class="box">
+                                <div class="img img1"><a href="#" class="common"></a></div>
+                                <h3 class="sub-title">카드<span>총 20개의 카드를<br>기억해보자</span></h3>
+                                <div class="info info1">
+                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="game baseball">
+                            <div class="box">
+                                <div class="img img2"><a href="#" class="common"></a></div>
+                                <h3 class="sub-title">야구<span>총 7단계의<br>숫자 야구 게임!!</span></h3>
+                                <div class="info info2">
+                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="game bridge">
+                            <div class="box">
+                                <div class="img img3"><a href="#" class="common"></a></div>
+                                <h3 class="sub-title">다리<span>시간 제한없는<br>기억력 게임!</span></h3>
+                                <div class="info info3">
+                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="gnb">
+                    <div class="help">
+                        <div class="title">
+                            <ul class="nav">
+                                <li class="info">
+                                    <a href="#" class="menu img1"></a>
+                                    <div class="back-img back-img1">010-1234-1234</div>
+                                </li>
+
+                                <li class="info">
+                                    <a href="#" class="menu img2"></a>
+                                    <div class="back-img back-img2">my@mg.com</div>
+                                </li>
+
+                                <li class="info">
+                                    <a href="#" class="menu img3"></a>
+                                    <div class="back-img back-img3">@memory-game</div>
+                                </li>
+                                <li class="info">
+                                    <a href="#" class="menu img4"></a>
+                                    <div class="back-img back-img4">@memory-game</div>
+                                </li>
+                                <li class="info">
+                                    <a href="#" class="menu img5"></a>
+                                    <div class="back-img back-img5">memory.com</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="copy-right">© 2023. 03 Memory-Project</h3>
+            </div>
+        </footer>
+        <!-- footer 끝 -->
+    </div>
+
+
+
+
+
+    <!--  -->
+
+    <script>
+        const initialize = () => {
+            // 부모 클래스 가져오기
+            const $inputBtnBox = document.getElementById('input-btn-box');
+
+            for (let i = 0; i < 10; i++) {
+                const $newTag = document.createElement('li');
+                $newTag.setAttribute('id', `input-btn${i}`);
+                $newTag.setAttribute('class', 'btn');
+                $newTag.textContent = i;
+
+                // <--------------------------- input view tag 생성하는 이벤트 ---------------------------> //
+                $newTag.addEventListener('click', () => {
+                    const $parent = document.getElementById('input-view');
+
+                    const $value = $newTag.textContent;
+                    const $inputNumberTag = document.createElement('li');
+                    $inputNumberTag.textContent = $value;
+
+                    $parent.appendChild($inputNumberTag);
+                });
+
+                // <--------------------------- click 사라지는 이벤트 ---------------------------> //
+                $newTag.addEventListener('click', () => {
+                    $newTag.setAttribute('id', 'hide');
+                });
+
+                $inputBtnBox.appendChild($newTag);
+            }
+
+            // <--------------------------- input btn 태그 생성하기 ---------------------------> //
+
+            // <--------------------------- input btn 클릭시 입력값 띄우기 ---------------------------> //
+
+            function makeInputViewTag() {
+                const $parent = document.getElementById('input-view');
+                const $value = $newTag.textContent;
+                const $inputNumberTag = document.createElement('li');
+                $inputNumberTag.textContent = $value;
+
+                $parent.appendChild($inputNumberTag);
+            }
+        }
+
+        initialize();
+        // <--------------------------- input btn 클릭시 입력값 띄우기 ---------------------------> //
+
+
+        // <--------------------------- 다시 담기 (초기화) 이벤트 ---------------------------> //
+
+        // 전체 리셋
+        const allReset = () => {
+            const $inputView = document.getElementById('input-view');
+            [...$inputView.children].forEach($li => $inputView.removeChild($li));
+            const $inputBtnBox = document.getElementById('input-btn-box');
+            [...$inputBtnBox.children].forEach($li => $inputBtnBox.removeChild($li));
+            // const $info = document.getElementById('info');
+            // [...$info.children].forEach($li => $info.removeChild($li));
+        }
+
+        // 결과 보기 버튼 리셋
+        const resultBtnReset = () => {
+            const $inputView = document.getElementById('input-view');
+            [...$inputView.children].forEach($li => $inputView.removeChild($li));
+            const $inputBtnBox = document.getElementById('input-btn-box');
+            [...$inputBtnBox.children].forEach($li => $inputBtnBox.removeChild($li));
+        }
+
+        const $resetBtn = document.querySelector('#reset-btn');
+
+        $resetBtn.onclick = () => {
+            allReset();
+            initialize();
+        };
+
+        // <--------------------------- 다시 담기 (초기화) 이벤트 ---------------------------> //
+
+
+        // <--------------------------- 결과 보기 이벤트 ---------------------------> //
+
+        const $resultBtn = document.querySelector('#result-btn');
+
+        $resultBtn.addEventListener('click', () => {
+            const $info = document.getElementById('info');
+
+            const $newTag = document.createElement('li');
+            const inputText = [...document.getElementById('input-view').children];
+
+            $newTag.textContent = '⚾️';
+            inputText.forEach($li => $newTag.textContent += $li.textContent + ' ');
+            $newTag.textContent += '👉 ';
+
+            $info.appendChild($newTag);
+            resultBtnReset();
+            initialize();
+
+        });
+
+        // <--------------------------- 결과 보기 이벤트 ---------------------------> //
+
+        // <--------------------------- gameData setup ---------------------------> //
+        const gameData = {
+            result: [],
+            round: 3,
+            strike: 0,
+            ball: 0,
+        }
+
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 10);
+        }
+
+        function makeResult() {
+            const makeResult = [];
+
+            while (makeResult.length < gameData.round) {
+                const number = getRandomNumber();
+
+                if (!makeResult.includes(number)) {
+                    makeResult.push(number);
+                }
+
+            }
+
+            gameData.result = makeResult;
+
+        }
+
+        makeResult();
+
+        // <--------------------------- gameData setup ---------------------------> //
+
+        // <--------------------------- check number ---------------------------> //
+
+        function checkNumber() {
+            const inputNumbers = [...document.getElementById('input-view').children];
+
+            inputNumbers.forEach($number => console.log($number));
+        }
+
+        checkNumber();
+
+        $resultBtn.addEventListener('click', checkNumber);
+
+
+
+
+        // <--------------------------- check number ---------------------------> //
+    </script>
+
+</body>
+
+</html>

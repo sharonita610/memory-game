@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 const glasses = document.getElementsByClassName('glass');
@@ -11,7 +12,19 @@ const imagesOrder = [[]];
 let counter = 0;
 let won = true;
 const index = 0;
-
+=======
+glasses = document.getElementsByClassName('glass');
+left = document.getElementsByClassName('left');
+right = document.getElementsByClassName('right');
+div_finish = document.getElementById('#char-finish');
+step = "C://Users//1BestCsharp//Downloads//steps.png";
+nostep = "C://Users//1BestCsharp//Downloads//nostep.png";
+list = [step, nostep];
+imagesOrder = [[]];
+counter = 0;
+won = true;
+index = 0;
+>>>>>>> main
 
 // create a function to enable buttons
 function enableButton()
@@ -49,7 +62,6 @@ function getRandomImages()
 
   }
 }
-
 
 function stepInThis(pic)
 {
