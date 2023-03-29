@@ -1,0 +1,50 @@
+body{
+    width: 500px;
+    height: 500px;
+}
+
+#clock {
+    width: 100%;
+    height: 100%;
+}
+#clock #seconds {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 120px;
+}
+
+#clock {
+    position: relative;
+    overflow: hidden;
+
+    margin: 50px auto;
+
+    background: rgba(167, 176, 194, 0.5);;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    object-fit: cover;
+    box-shadow: 0 0 3px rgba(1, 1, 1, 2);
+     transform: translate(50%, 50%);
+     animation: scale-up 6s ease-in-out forwards;
+}
+
+
+@keyframes scale-up {
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(0.2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+

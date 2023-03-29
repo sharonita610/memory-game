@@ -1,16 +1,16 @@
 
 
-glasses = document.getElementsByClassName('glass');
-left = document.getElementsByClassName('left');
-right = document.getElementsByClassName('right');
-div_finish = document.getElementById('#char-finish');
-step = "C://Users//1BestCsharp//Downloads//steps.png";
-nostep = "C://Users//1BestCsharp//Downloads//nostep.png";
-list = [step, nostep];
-imagesOrder = [[]];
-counter = 0;
-won = true;
-index = 0;
+const glasses = document.getElementsByClassName('glass');
+const left = document.getElementsByClassName('left');
+const right = document.getElementsByClassName('right');
+const div_finish = document.getElementById('#char-finish');
+const step = "C:/memory-game/bridge/bridge-img/bridge-img-girl1.jpg";
+const nostep = "C:/memory-game/bridge/bridge-img/bridge-img-fail.png";
+const list = [step, nostep];
+const imagesOrder = [[]];
+let counter = 0;
+let won = true;
+const index = 0;
 
 
 // create a function to enable buttons

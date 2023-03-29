@@ -11,24 +11,36 @@
 
 //  변수이름 선언하기
 
-glasses = document.getElementsByName('glass');
-left = document.getElementsByName('left');
-right = document.getElementsByName('right');
-go = "C:\\memory-game\\bridge\\bridge-img\\bridge-img-girl1.jpg";
-ungo = "C:\\memory-game\\bridge\\bridge-img\\bridge-img-fail.png";
-list = [go , ungo];
-imagesOrder = [[]];
-step = 0;
-won = true;
-index = 0;
+const left = document.getElementsByName('left');
+const right = document.getElementsByName('right');
+const go = "C:\\memory-game\\bridge\\bridge-img\\bridge-img-girl1.jpg";
+const fail = "C:\\memory-game\\bridge\\bridge-img\\bridge-img-fail.png";
+const list = [go , fail];
+const imagesOrder = [[]];
+const step = 0;
+const won = true;
+
+// butt
+
 
 
 // 노란칸에 랜덤 이미지를 [ o , o ] 적용해주는 함수 생성
-function getRandomImages(){
-  for(let i = 0; i < right.length; i++){
-
+function getRandomImages() {
+  for (let i = 0; i < left.length; i++) {
+    // get random images
+    const randomImages = [list[Math.floor(Math.random() * list.length)], list[Math.floor(Math.random() * list.length)]];
+    // swap the images if the first one is 'step' 2차원 배열에서 하나가 1이면 다른것이 0이 자동으로 적용되도록 함
+    if (randomImages[0] === step) {
+      [randomImages[0], randomImages[1]] = [randomImages[1], randomImages[0]];
+    }
+    imagesOrder[i] = randomImages;
+    console.log(imagesOrder[i][1]);
+    console.log(imagesOrder[i][0]);
+    console.log("-------------------");
   }
 }
+
+
 
 
 

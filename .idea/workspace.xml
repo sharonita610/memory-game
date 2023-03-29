@@ -5,17 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bridge/html/feat-bridge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory-game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CountDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CountDown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bridge/css/bridge-index-body.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/index-banner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img12 .jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bridge/css/bridge.css" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/css/bridge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/html/bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/CountDown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/html/feat-bridge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bridge/js/bridge.js" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/js/bridge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/index-banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,10 +94,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,12 +114,20 @@
       <recent name="C:\memory-game\index-login\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.CountDown.html">
+    <configuration name="CountDown.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/memory-game/CountDown.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/memory-game/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="CountDown.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/CountDown.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.CountDown.js" />
+        <item itemvalue="JavaScript Debug.CountDown.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -104,7 +145,13 @@
       <workItem from="1679893410479" duration="3814000" />
       <workItem from="1679898951036" duration="1356000" />
       <workItem from="1679900402198" duration="12410000" />
-      <workItem from="1679925798997" duration="10297000" />
+      <workItem from="1679925798997" duration="11467000" />
+      <workItem from="1679965025444" duration="38000" />
+      <workItem from="1679965071700" duration="952000" />
+      <workItem from="1679979861105" duration="19757000" />
+      <workItem from="1680018388736" duration="8791000" />
+      <workItem from="1680048270949" duration="525000" />
+      <workItem from="1680066540342" duration="4836000" />
     </task>
     <servers />
   </component>
