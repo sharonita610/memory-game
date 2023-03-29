@@ -71,18 +71,21 @@
                             <ul class="nav">
 
                                 <div class="side">
-                                    <div id="baseball-logo" class="round"></div>
+                                    <div id="baseball-logo" class="round">
+                                        <div class="img">
+
+                                        </div>
+                                    </div>
+                                    <h2 class="history">🎯 결과 내역</h2>
                                     <ul id="score-info" class="score-info">
-                                        <!-- !! 스크립트로 값 추가 -->
                                     </ul>
                                 </div>
 
                                 <div class="title">
                                     <ul id="input-view" class="input">
-                                        <!-- !! 입력한 값 띄워주기 -->
                                     </ul>
                                     <ul class="result">
-                                        <li>결과 값 뿌려주기</li>
+                                        <li>🥇 &nbsp; 🥈 &nbsp; 🥉</li>
                                     </ul>
 
                                     <ul class="box">
@@ -96,13 +99,12 @@
                                     </ul>
 
                                     <ul id="input-btn-box" class="input-btn">
-                                        <!-- !! 스크립트로 태그 생성 -->
                                     </ul>
                                 </div>
 
                                 <div class="btn-box">
                                     <div class="back-btn">
-                                        <a href="index.html">back-btn</a>
+                                        <a href="index.html"></a>
                                     </div>
                                     <div class="start-btn">
                                         <a href="#">start-btn</a>
@@ -143,7 +145,7 @@
                                 <div class="img img1"><a href="#" class="common"></a></div>
                                 <h3 class="sub-title">카드<span>총 20개의 카드를<br>기억해보자</span></h3>
                                 <div class="info info1">
-                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    <div class="info-back">글쎄? 해마는 충분히<br>키웠는가?<br>색깔을 보면 알 수 있지!<br>컬러풀한게 유행이야
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +155,7 @@
                                 <div class="img img2"><a href="#" class="common"></a></div>
                                 <h3 class="sub-title">야구<span>총 7단계의<br>숫자 야구 게임!!</span></h3>
                                 <div class="info info2">
-                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    <div class="info-back">정 어렵다면.. 숫자 1개씩만<br>선택해서 입력해봐..<br>전략을 잘 세우라구!<br>나머진 너의 해마를 믿어봐
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +165,7 @@
                                 <div class="img img3"><a href="#" class="common"></a></div>
                                 <h3 class="sub-title">다리<span>시간 제한없는<br>기억력 게임!</span></h3>
                                 <div class="info info3">
-                                    <div class="info-back">추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정<br>추가 사항 기입 예정
+                                    <div class="info-back">재밌었다면 돌아가기 전에<br>광고 한 번만 클릭해줘 👉<br>혹시 쿠팡에서 필요한 건<br>없고?
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +370,7 @@
             $inputNumbers += `👉 ${gameData.strike}스트라이크! ${gameData.ball}볼!`;
             $scoreTag.textContent = $inputNumbers;
 
-            $scoreInfo.appendChild($scoreTag);
+            $scoreInfo.prepend($scoreTag);
             roundUp();
         }
 
@@ -404,7 +406,6 @@
 
         // <--------------------------- result-btn 버튼 클릭 이벤트 처리 ---------------------------> //
 
-
         // 2. 정답을 맞췄을 경우 round level up 시키기
         function roundUp() {
             if (gameData.strike === gameData.round) {
@@ -417,28 +418,26 @@
                 reset();
                 makeResult();
 
-
-                const $baseballLogo = document.getElementById('baseball-logo');
+                const $baseballLogo = document.querySelector('#baseball-logo .img');
 
                 switch (gameData.clearRound) {
                     case 1:
                         $baseballLogo.style.backgroundImage = "url('/baseball/img/round2.png')"
+                        $baseballLogo.style.backgroundSize = "30%";
+
                         break;
-                    case 5:
+                    case 2:
                         $baseballLogo.style.backgroundImage = "url('/baseball/img/round3.png')"
+                        $baseballLogo.style.backgroundSize = "40%";
                         break;
-                    case 8:
+                    case 3:
                         $baseballLogo.style.backgroundImage = "url('/baseball/img/round4.png')"
+                        $baseballLogo.style.backgroundSize = "50%";
                         break;
                 }
 
             }
         }
-
-        // 3. round 보다 작은 값이 존재하는 경우 결과 보기 안 되게 하기
-        
-
-
     </script>
 
 </body>
