@@ -116,7 +116,6 @@
     /* animation: move 2s ease-in-out; */
     animation: rotation 2s linear infinite;
     animation-duration: alternate-reverse;
-
 }
 
 @keyframes rotation {
