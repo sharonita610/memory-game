@@ -82,7 +82,7 @@
 }
 
 #main .contains .contents .main-game .game-nav .nav .side .round {
-    background: url("/baseball/img/baseball-round1.png") no-repeat center/cover;
+    background: url("/baseball/img/round1.png") no-repeat center/cover;
     background-size: 20%;
 
     height: 20%;
@@ -176,18 +176,22 @@
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .btn {
+
     width: 15%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-items: center;
 
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn {
-    border: 1px solid red;
-    height: 80px;
+    box-shadow: 1px 1px 10px #333;
+
+    width: 120px;
+    height: 50px;
 
     text-align: center;
 
@@ -391,10 +395,31 @@ button {
 
 
 
+/* btn img */
+#result-btn {
+    background: url("/baseball/img/start-btn.png") no-repeat center/cover;
+}
 
+#reset-btn {
+
+    background: url("/baseball/img/reset-btn.png") no-repeat center/cover;
+}
 
 
 /* event tag */
 #hide {
     visibility: hidden !important;
+}
+
+
+#baseballLogo2 {
+    background: url("/baseball/img/round2.png") no-repeat center/cover !important;
+}
+
+#baseballLogo3 {
+    background: url("/baseball/img/round3.png") no-repeat center/cover !important;
+}
+
+#baseballLogo4 {
+    background: url("/baseball/img/round4.png") no-repeat center/cover !important;
 }
