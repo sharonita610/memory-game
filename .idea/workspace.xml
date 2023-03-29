@@ -71,7 +71,7 @@
       <recent name="C:\memory-game\index-login\img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.CountDown.html">
+  <component name="RunManager" selected="JavaScript 디버그.CountDown.html">
     <configuration name="CountDown.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/memory-game/CountDown.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -84,8 +84,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.CountDown.js" />
-        <item itemvalue="JavaScript Debug.CountDown.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
