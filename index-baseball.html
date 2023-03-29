@@ -297,7 +297,7 @@
 
         const $resultBtn = document.querySelector('#result-btn');
 
-        $resultBtn.onclick = () => {
+        $resultBtn.addEventListener('click', () => {
             const $info = document.getElementById('info');
 
             const $newTag = document.createElement('li');
@@ -310,10 +310,60 @@
             $info.appendChild($newTag);
             resultBtnReset();
             initialize();
-        }
+
+        });
 
         // <--------------------------- 결과 보기 이벤트 ---------------------------> //
 
+        // <--------------------------- gameData setup ---------------------------> //
+        const gameData = {
+            result: [],
+            round: 3,
+            strike: 0,
+            ball: 0,
+        }
+
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 10);
+        }
+
+        function makeResult() {
+            const makeResult = [];
+
+            while (makeResult.length < gameData.round) {
+                const number = getRandomNumber();
+
+                if (!makeResult.includes(number)) {
+                    makeResult.push(number);
+                }
+
+            }
+
+            gameData.result = makeResult;
+
+        }
+
+        makeResult();
+
+        // <--------------------------- gameData setup ---------------------------> //
+
+        // <--------------------------- check number ---------------------------> //
+
+        function checkNumber() {
+            const inputNumbers = [...document.getElementById('input-view').children];
+
+            inputNumbers.forEach($number => console.log($number));
+        }
+
+        checkNumber();
+
+        $resultBtn.addEventListener('click', checkNumber);
+
+
+
+
+        // <--------------------------- check number ---------------------------> //
     </script>
 
 </body>
