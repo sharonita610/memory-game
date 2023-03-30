@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/memorygame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/html/feat-bridge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/js/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memorygame.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1680066540342" duration="4836000" />
       <workItem from="1680079803190" duration="371000" />
       <workItem from="1680089959118" duration="14004000" />
-      <workItem from="1680134621436" duration="3589000" />
+      <workItem from="1680134621436" duration="3968000" />
     </task>
     <servers />
   </component>
@@ -129,7 +128,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
             </State>
