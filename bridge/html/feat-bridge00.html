@@ -16,7 +16,7 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="../../index-header.css">
-	<link rel="stylesheet" href="../../index-body.css">
+	<link rel="stylesheet" href="../css/bridge-index-body.css">
 	<link rel="stylesheet" href="../../index-footer.css">
 	<link rel="stylesheet" href="../../index-name-input/index-login.css">
 	<link rel="stylesheet" href="../../index-name-input/index-body-main-game.css">
@@ -277,6 +277,7 @@
 		// 6단계까지 답 생성하기 (위의 함수 6번 호출(번호 6개 추가))
 		for (let i = 0; i < 6; i++) {
 			setResult();
+
 		}
 		// 👆 ---------------------------- gameData setup ---------------------------- 👆 //
 
@@ -289,7 +290,8 @@
 		// 클릭했을 때 알람을 띄우는 함수 (왼쪽 다리, 테스트용)
 		function clickLeftAlert() {
 			alert("왼쪽 다리 클릭됨!");
-		}
+
+        }
 		// 클릭했을 때 알람을 띄우는 함수 (오른쪽 다리, 테스트용)
 		function clickRightAlert() {
 			alert("오른쪽 다리 클릭됨!");
@@ -372,7 +374,8 @@
 
 			if (bridgeResult === 1) {
 				// ✅ 정답(1)일 경우 ✅
-
+              alert("정답입니다! 한 칸 앞으로 이동했습니다!");
+              alert("다음 옵션을 선택하세요");
 				// 현재 버튼 클릭 불가로 설정 (left right 둘 다)
 				setDisabled($leftBridge);
 				setDisabled($rightBridge);
@@ -401,7 +404,7 @@
 
 			} else {
 				// ❌ 오답(1)일 경우 ❌
-				alert("left 오답이다.");
+                alert("왼쪽다리는 정답이 아닙니다 \n 처음부터 다시 시작하세요!");
 				// reset
 				resetBridge();
 			}
@@ -415,7 +418,8 @@
 
 			if (bridgeResult === 1) {
 				// ✅ 정답(1)일 경우 ✅
-
+					alert("정답입니다! 한 칸 앞으로 이동했습니다!");
+                    alert("다음 옵션을 선택하세요");
 				// 현재 버튼 클릭 불가로 설정 (left right 둘 다)
 				setDisabled($rightBridge);
 				setDisabled($leftBridge);
@@ -442,7 +446,7 @@
 
 			} else {
 				// ❌ 오답(1)일 경우 ❌
-				alert("right 오답이다.");
+              alert("오른쪽 다리는 정답이 아닙니다 \n 처음부터 다시 시작하세요!");
 				// reset
 				resetBridge();
 			}
@@ -472,7 +476,12 @@
 		//👇 ---------------------------- bridge img ---------------------------- 👇 //
 
 		// endGame 함수 (clearRound가 6이 될 때가 게임을 다 깼을 때)
+        function endGame(clearRound){
+          if(clearRound <= 6);{
+            alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!`);
 
+          }
+        }
 		//👆 ---------------------------- bridge img ---------------------------- 👆 //
 
 
