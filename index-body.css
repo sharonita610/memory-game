@@ -124,6 +124,8 @@ button {
     width: 15%;
     overflow: hidden;
     height: 100%;
+
+    box-shadow: 1px 1px 10px #333;
 }
 
 #main .banner1 img {
@@ -141,6 +143,11 @@ button {
     width: 15%;
     overflow: hidden;
     height: 100%;
+    box-shadow: 1px 1px 10px #333;
+    display: block;
+
+    height: fit-content;
+
 }
 
 #main .banner1 img {
