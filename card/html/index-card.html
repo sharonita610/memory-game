@@ -15,14 +15,16 @@
     <link rel="apple-touch-icon" href="/main/img/document.png" />
 
     <!-- css -->
-    <link rel="stylesheet" href="index-header.css">
-    <link rel="stylesheet" href="index-body.css">
-    <link rel="stylesheet" href="index-footer.css">
-    <link rel="stylesheet" href="index-name-input/index-login.css">
-    <link rel="stylesheet" href="index-name-input/index-body-main-game.css">
-    <link rel="stylesheet" href="/index-banner/index-banner.css">
-    <link rel="stylesheet" href="main-result-button/main-result-btn.css">
 
+    <link rel="stylesheet" href="/card/css/index-card.css">
+    <link rel="stylesheet" href="/main-result-button/main-result-btn.css">
+    <link rel="stylesheet" href="/index-header.css">
+    <link rel="stylesheet" href="/card-index-body.css">
+    <link rel="stylesheet" href="/index-footer.css">
+    <link rel="stylesheet" href="/index-name-input/index-login.css">
+    <link rel="stylesheet" href="/index-name-input/index-body-main-game.css">
+    <link rel="stylesheet" href="/index-banner/index-banner.css">
+    
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,66 +118,15 @@
             <!-- banner 1 end-->
             <div class="contains">
                 <div class="contents">
-                    <!-- index login-->
-                    <div class="name-container">
-                        <p class="title">시작하고 싶다면 정보를 입력해주세요!</p>
-                        <div id="name">
-                            <form id="input">
-                                <input type="text" name="name" placeholder="ex)홍길동">
-                                <input type="text" name="age" placeholder="ex)나이">
-                            </form>
-                            <!-- 입력 완료 버튼 -->
-                            <button href="#" id="name-start-btn">입력 완료</button>
-                        </div>
-                        <span>본 게임의 결과는 지극히 운영진의 주관적인 판단이므로 참고용으로만 사용 부탁드립니다</span>
-                    </div>
-                    <!-- index login finish -->
                     <div class="main-game">
                         <div class="game-nav">
-                            <ul class="nav">
-                                <li class="game card">
-                                    <a href="/card/html/index-card.html">
-                                        <figure class="game-img">
-                                            <img src="/index-name-input/name-img/cardchange.png" alt="cardGame">
-                                            <figcaption>
-                                                <p>당신은 그림을 잘 기억할 수 있을까요? 무작위로 섞인 카드를 맞추는 테스트입니다.</p>
-                                                <div class="heading">
-                                                    <h2>CARD<span>&nbsp;game</span></h2>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-
-                                <li class="game baseball">
-                                    <a href="/baseball/index-baseball.html">
-                                        <figure class="game-img">
-                                            <img src="/index-name-input/name-img/cardchange.png" alt="cardGame">
-                                            <figcaption>
-                                                <p>야구를 모르신다구요? 괜찮습니다. 단순히 기억력을 이용한 게임이니까요. 룰은 게임에서 설명해드릴 테니 천천히 읽어보세요.
-                                                </p>
-                                                <div class="heading">
-                                                    <h2>BASEBALL<span>&nbsp;game</span></h2>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li class="game bridge">
-                                    <a href="bridge/html/feat-bridge.html">
-                                        <figure class="game-img">
-                                            <img src="/index-name-input/name-img/cardchange.png" alt="cardGame">
-                                            <figcaption>
-                                                <p>오징어 게임에 참가한 당신. 과연, 살아남을 수 있을까요? 눈앞에 있는 '456'억 원을 획득할 수 있는 절회의 기회!
-                                                    당신의 해마와 함께 협력하여 획득하세요!</p>
-                                                <div class="heading">
-                                                    <h2>BRIDGE<span>&nbsp;game</span></h2>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="nav">
+                                <!-- Card Game Begin  -->
+                                <h1>Lives: <span class="playerLivesCount"></span></h1>
+                                <section></section>
+                                <script src="/card/js/card.js"></script>
+                                <!-- Card Game End -->
+                            </div>
                         </div>
                         <div class="game-nav-sub">
                             <ul class="nav-sub">
@@ -195,30 +146,28 @@
                 </div>
             </div>
             <div class="banner2">
-<!--                <div id="slide" class="img-box" val="1" max="3">-->
-	                <div id="right-slider">
-		                <div class="right-image-box">
-			                <div><img src="/index-banner/right-banner/img/right-banner-img1.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img2.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img5.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img6.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img7.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img8.png" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img9.jpg" /></div>
-			                <div><img src="/index-banner/right-banner/img/right-banner-img10.jpg" /></div>
-			                <!--		   clone -->
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img1.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img2.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img5.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img6.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img7.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img8.png" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img9.jpg" /></div>
-			                <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img10.jpg" /></div>
+                <div id="right-slider">
+                    <div class="right-image-box">
+                        <div><img src="/index-banner/right-banner/img/right-banner-img1.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img2.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img5.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img6.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img7.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img8.png" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img9.jpg" /></div>
+                        <div><img src="/index-banner/right-banner/img/right-banner-img10.jpg" /></div>
+                        <!--		   clone -->
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img1.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img2.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img5.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img6.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img7.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img8.png" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img9.jpg" /></div>
+                        <div class="clone"><img src="/index-banner/right-banner/img/right-banner-img10.jpg" /></div>
 
-		                </div>
-	                </div>
-<!--                </div>-->
+                    </div>
+                </div>
             </div>
         </div>
 
