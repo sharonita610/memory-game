@@ -15,12 +15,13 @@
     <link rel="apple-touch-icon" href="/main/img/document.png" />
 
     <!-- css -->
-    <link rel="stylesheet" href="index-header.css">
-    <link rel="stylesheet" href="index-baseball.css">
-    <link rel="stylesheet" href="index-footer.css">
-    <link rel="stylesheet" href="index-name-input/index-login.css">
-    <link rel="stylesheet" href="index-name-input/index-body-main-game.css">
-    <link rel="stylesheet" href="main-result-button/main-result-btn.css">
+    <link rel="stylesheet" href="/index-header.css">
+    <link rel="stylesheet" href="/index-body.css">
+    <link rel="stylesheet" href="/baseball/css/index-baseball.css">
+    <link rel="stylesheet" href="/index-footer.css">
+    <link rel="stylesheet" href="/index-name-input/index-login.css">
+    <link rel="stylesheet" href="/index-name-input/index-body-main-game.css">
+    <link rel="stylesheet" href="/main-result-button/main-result-btn.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +36,9 @@
 
     <!-- js -->
     <link href="/index-banner/index-banner.js">
+    <link href="/index-banner/index-banner.css">
+
+
 
 </head>
 
@@ -155,7 +159,8 @@
                                 <div class="img img2"><a href="#" class="common"></a></div>
                                 <h3 class="sub-title">야구<span>총 7단계의<br>숫자 야구 게임!!</span></h3>
                                 <div class="info info2">
-                                    <div class="info-back">정 어렵다면.. 숫자 1개씩만<br>선택해서 입력해봐..<br>전략을 잘 세우라구!<br>나머진 너의 해마를 믿어봐
+                                    <div class="info-back">정 어렵다면.. 숫자 1개씩만<br>선택해서 입력해봐..<br>전략을 잘 세우라구!<br>나머진 너의 해마를
+                                        믿어봐
                                     </div>
                                 </div>
                             </div>
@@ -307,6 +312,7 @@
             for (let i = 0; i < 10; i++) {
 
                 const $newTag = document.createElement('li');
+
                 $newTag.setAttribute('id', `input-btn${i}`);
                 $newTag.setAttribute('class', 'btn');
                 $newTag.textContent = i;
