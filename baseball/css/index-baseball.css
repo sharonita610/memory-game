@@ -217,7 +217,6 @@
     flex-direction: column;
     justify-content: end;
     align-items: center;
-
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn {
@@ -232,6 +231,7 @@
     margin-bottom: 15px;
 
     transition: all 0.2s linear;
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn:hover {
@@ -240,7 +240,7 @@
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .img {
-    background: url("baseball/img/baseball-back.png") no-repeat center/cover;
+    background: url("/baseball/img/baseball-back.png") no-repeat center/cover;
     background-size: 75%;
     background-position-y: 10px;
 
@@ -271,7 +271,8 @@
     margin: 0px 10px;
     border: 1px solid #0be6a4;
 
-    width: fit-content;
+    width: 60px;
+    height: 60px;
 
     display: flex;
     flex-direction: row;
@@ -281,6 +282,10 @@
 
     width: 50px;
     transition: all 0.2s linear;
+
+
+    background: url("/baseball/img/input0.png") no-repeat center / cover;
+    font-size: 0px;
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .input-btn li:hover {
@@ -471,6 +476,47 @@ button {
     background: url("/baseball/img/round4.png") no-repeat center/cover !important;
 }
 
+
+/* img */
+#input-btn0 {
+    background: url("/baseball/img/input0.png") no-repeat center/cover !important;
+}
+
+#input-btn1 {
+    background: url("/baseball/img/input1.png") no-repeat center/cover !important;
+}
+
+#input-btn2 {
+    background: url("/baseball/img/input2.png") no-repeat center/cover !important;
+}
+
+#input-btn3 {
+    background: url("/baseball/img/input3.png") no-repeat center/cover !important;
+}
+
+#input-btn4 {
+    background: url("/baseball/img/input4.png") no-repeat center/cover !important;
+}
+
+#input-btn5 {
+    background: url("/baseball/img/input5.png") no-repeat center/cover !important;
+}
+
+#input-btn6 {
+    background: url("/baseball/img/input6.png") no-repeat center/cover !important;
+}
+
+#input-btn7 {
+    background: url("/baseball/img/input7.png") no-repeat center/cover !important;
+}
+
+#input-btn8 {
+    background: url("/baseball/img/input8.png") no-repeat center/cover !important;
+}
+
+#input-btn9 {
+    background: url("/baseball/img/input9.png") no-repeat center/cover !important;
+}
 
 
 
