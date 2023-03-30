@@ -41,8 +41,6 @@
 	<!--	<script type="javaScript" src="../js/bridge.js"></script>-->
 
 	<!--js -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </head>
@@ -427,7 +425,7 @@
       // ✅ 정답(1)일 경우 ✅
       alert("정답입니다! 한 칸 앞으로 이동했습니다!");
       alert("다음 옵션을 선택하세요");
-      if(true){
+      if(gameData.round == 6){
         endGame();
       }
       // 현재 버튼 클릭 불가로 설정 (left right 둘 다)
@@ -441,6 +439,7 @@
 
       // round 1 상승
       gameData.round++;
+      gameData.checkFinal += gameData.round;
 
       // 다음 버튼 클릭 허용 (왼쪽, 오른쪽 모두 허용해야함)
       // 부모 호출 후 해당 id 값이 라운드와 같다면 disabled 해제시키기
@@ -474,7 +473,7 @@
       // ✅ 정답(1)일 경우 ✅
       alert("정답입니다! 한 칸 앞으로 이동했습니다!");
       alert("다음 옵션을 선택하세요");
-      if(true){
+      if(gameData.round == 6){
         endGame();
       }
       // 현재 버튼 클릭 불가로 설정 (left right 둘 다)
@@ -486,7 +485,9 @@
 
       // round 1 상승
       gameData.round++;
+      gameData.checkFinal += gameData.round;
 
+      console.log(gameData.checkFinal);
       // 다음 버튼 클릭 허용 (왼쪽, 오른쪽 모두 허용해야함)
       // 부모 호출 후 해당 id 값의
       $leftBtn.forEach($btn => {
@@ -534,8 +535,12 @@
 
   // endGame 함수 (clearRound가 6이 될 때가 게임을 다 깼을 때)
   function endGame(){
-    if(gameData.checkFinal == 6);{
+    if(gameData.clearRound == 6);{
+
+      console.log(gameData.checkFinal);
+
       alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!`);
+      alert(`${gameData.checkFinal}번 만에 성공하였습니다.`);
 
     }
   }
