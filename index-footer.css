@@ -144,6 +144,8 @@
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 
     line-height: 1.2;
+    text-align: center;
+    justify-content: center;
 }
 
 #footer .contains .title .nav .game .sub-title span {
