@@ -2,7 +2,7 @@
 
 #footer {
     height: fit-content;
-    background: url("/src/main/img/footer-back.png");
+    background: url("../../main/img/footer-back.png");
     background-position-y: 900px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 #footer .contains .title .nav .game .box .info .info-back {
-    background: url("src/main/img/footer-info.png") no-repeat center/cover;
+    background: url("../../main/img/footer-info.png") no-repeat center/cover;
     height: 100%;
     width: 100%;
 
@@ -126,7 +126,7 @@
     top: 50%;
     left: 50%;
 
-    background: url("/src/main/img/footer-nav.png") no-repeat center / cover;
+    background: url("../../main/img/footer-nav.png") no-repeat center / cover;
 
     animation: rotate_image_footer 12s infinite Linear;
 
