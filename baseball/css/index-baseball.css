@@ -82,10 +82,11 @@
 }
 
 #main .contains .contents .main-game .game-nav .nav .side .history {
-    font-size: 1.5em;
-    color: #000;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-    margin: 15px;
+    height: 50px;
+    width: 50px;
+    background: url("../img/history2.png") no-repeat center / cover;
+    box-shadow: 5px 5px 5px #000;
+    margin: 15px 0;
 }
 
 #main .contains .contents .main-game .game-nav .nav .side .round {
@@ -94,13 +95,15 @@
     box-shadow: 5px 5px 10px #333;
     border-radius: 20px;
     width: 90%;
+
+    background: url("../img/logo-back1.png") no-repeat center / cover;
 }
 
 #main .contains .contents .main-game .game-nav .nav .side .round .img {
-    background: url("/baseball/img/round1.png") no-repeat center/cover;
+    background: url("../img/round1.png") no-repeat center/cover;
     background-size: 20%;
     width: 100%;
-    height: 100%;
+    height: 180px;
     animation: round-move 5s infinite linear alternate;
 
 }
@@ -119,6 +122,8 @@
     width: 90%;
     height: 65%;
     overflow: scroll;
+
+    background: url("../img/logo-back.png") no-repeat center / cover;
 }
 
 
@@ -127,6 +132,10 @@
     margin: 10px 0px;
     font-size: 0.7em;
     color: #fff;
+
+    box-shadow: 5px 5px 10px #333;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -145,19 +154,22 @@
 
     border-radius: 50px;
     box-shadow: 5px 5px 10px #333;
+
+
+    background: url("../img/baseball-back.jpg") no-repeat center / cover;
 }
 
 
 #main .contains .contents .main-game .game-nav .nav .title .input {
     height: 10%;
-    width: 100%;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
 
     display: flex;
     flex-direction: center;
-
     justify-content: center;
     align-items: center;
-
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .input li {
@@ -167,32 +179,36 @@
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
     font-size: 2em;
 
-    width: 50px;
     box-shadow: 1px 1px 10px #333;
     border-radius: 5px;
     margin: 0px 15px;
+
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+
+    border: 3px solid #ff0000;
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .result {
-    /* border: 1px solid blue; */
     height: 10%;
-    width: 100%;
+    width: 90%;
 
     display: flex;
     flex-direction: center;
-
     justify-content: center;
     align-items: center;
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .result li {
-    width: fit-content;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-    font-size: 2em;
+    width: 50px;
+    height: 50px;
 
     text-align: center;
+    margin: 0px 15px;
+
+    background: url("../img/result-view.png") no-repeat center / cover;
 
 }
 
@@ -222,8 +238,8 @@
 #main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn {
     box-shadow: 1px 1px 10px #333;
 
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 
     text-align: center;
 
@@ -232,15 +248,16 @@
 
     transition: all 0.2s linear;
 
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .btn .common-btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .box .img {
-    background: url("/baseball/img/baseball-back.png") no-repeat center/cover;
+    /* background: url("../img/baseball-back.png") no-repeat center/cover; */
     background-size: 75%;
     background-position-y: 10px;
 
@@ -252,12 +269,15 @@
 #main .contains .contents .main-game .game-nav .nav .title .input-btn {
 
     height: 10%;
-    width: 100%;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
 
     display: flex;
     flex-direction: center;
     justify-content: center;
     align-items: center;
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .title .input-btn li {
@@ -284,7 +304,7 @@
     transition: all 0.2s linear;
 
 
-    background: url("/baseball/img/input0.png") no-repeat center / cover;
+    background: url("../img/input0.png") no-repeat center / cover;
     font-size: 0px;
 }
 
@@ -298,8 +318,6 @@
     height: 15%;
     width: 100%;
 
-    /* border: 5px solid #000; */
-
     box-shadow: 1px 1px 10px #333;
     display: flex;
     flex-direction: row;
@@ -307,21 +325,67 @@
     align-items: center;
 }
 
-#main .contains .contents .main-game .game-nav .nav .btn-box .start-btn {
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn {
     width: 75%;
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
-#main .contains .contents .main-game .game-nav .nav .btn-box .start-btn a {
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img {
     box-shadow: 1px 1px 10px #333;
-    width: 200px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 
-    border-radius: 15px;
+
+    background: url("../img/help-btn.png") no-repeat center / cover;
+
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+/*     border: 5px solid rgb(64, 224, 208);
+
+    opacity: 0;
+    top: -120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 1s 0s; */
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img:hover~.help-view {
+    display: block;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view {
+    border: 1px solid red;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+
+    border-radius: 100px;
+
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .back-btn {
@@ -331,15 +395,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .back-btn a {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 
     border-radius: 15px;
-    background: url("/baseball/img/back-btn.png") no-repeat center / cover;
+    background: url("../img/back-btn.png") no-repeat center / cover;
     box-shadow: 1px 1px 10px #333;
+
+    transition: all 0.2s linear;
+
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .back-btn a:hover {
+    transform: scale(1.2);
 }
 
 
@@ -449,12 +521,12 @@ button {
 
 /* btn img */
 #result-btn {
-    background: url("/baseball/img/start-btn.png") no-repeat center/cover;
+    background: url("../img/start-btn.png") no-repeat center/cover;
 }
 
 #reset-btn {
 
-    background: url("/baseball/img/reset-btn.png") no-repeat center/cover;
+    background: url("../img/reset-btn.png") no-repeat center/cover;
 }
 
 
@@ -465,57 +537,60 @@ button {
 
 
 #baseballLogo2 {
-    background: url("/baseball/img/round2.png") no-repeat center/cover !important;
+    background: url("../img/round2.png") no-repeat center/cover !important;
+    background-size: 30% !important;
 }
 
 #baseballLogo3 {
-    background: url("/baseball/img/round3.png") no-repeat center/cover !important;
+    background: url("../img/round3.png") no-repeat center/cover !important;
+    background-size: 40% !important;
 }
 
 #baseballLogo4 {
-    background: url("/baseball/img/round4.png") no-repeat center/cover !important;
+    background: url("../img/round4.png") no-repeat center/cover !important;
+    background-size: 50% !important;
 }
 
 
 /* img */
 #input-btn0 {
-    background: url("/baseball/img/input0.png") no-repeat center/cover !important;
+    background: url("../img/input0.png") no-repeat center/cover !important;
 }
 
 #input-btn1 {
-    background: url("/baseball/img/input1.png") no-repeat center/cover !important;
+    background: url("../img/input1.png") no-repeat center/cover !important;
 }
 
 #input-btn2 {
-    background: url("/baseball/img/input2.png") no-repeat center/cover !important;
+    background: url("../img/input2.png") no-repeat center/cover !important;
 }
 
 #input-btn3 {
-    background: url("/baseball/img/input3.png") no-repeat center/cover !important;
+    background: url("../img/input3.png") no-repeat center/cover !important;
 }
 
 #input-btn4 {
-    background: url("/baseball/img/input4.png") no-repeat center/cover !important;
+    background: url("../img/input4.png") no-repeat center/cover !important;
 }
 
 #input-btn5 {
-    background: url("/baseball/img/input5.png") no-repeat center/cover !important;
+    background: url("../img/input5.png") no-repeat center/cover !important;
 }
 
 #input-btn6 {
-    background: url("/baseball/img/input6.png") no-repeat center/cover !important;
+    background: url("../img/input6.png") no-repeat center/cover !important;
 }
 
 #input-btn7 {
-    background: url("/baseball/img/input7.png") no-repeat center/cover !important;
+    background: url("../img/input7.png") no-repeat center/cover !important;
 }
 
 #input-btn8 {
-    background: url("/baseball/img/input8.png") no-repeat center/cover !important;
+    background: url("../img/input8.png") no-repeat center/cover !important;
 }
 
 #input-btn9 {
-    background: url("/baseball/img/input9.png") no-repeat center/cover !important;
+    background: url("../img/input9.png") no-repeat center/cover !important;
 }
 
 
