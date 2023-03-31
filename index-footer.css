@@ -2,7 +2,7 @@
 
 #footer {
     height: fit-content;
-    background: url("/main/img/footer-back.png");
+    background: url("/src/main/img/footer-back.png");
     background-position-y: 900px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 #footer .contains .title .nav .game .box .info .info-back {
-    background: url("main/img/footer-info.png") no-repeat center/cover;
+    background: url("src/main/img/footer-info.png") no-repeat center/cover;
     height: 100%;
     width: 100%;
 
@@ -126,7 +126,7 @@
     top: 50%;
     left: 50%;
 
-    background: url("/main/img/footer-nav.png") no-repeat center / cover;
+    background: url("/src/main/img/footer-nav.png") no-repeat center / cover;
 
     animation: rotate_image_footer 12s infinite Linear;
 
@@ -167,24 +167,6 @@
     color: #000;
 }
 
-
-#footer .contains .gnb .help {
-    background: url("/main/img/footer-gnb.png") no-repeat center/cover;
-
-    border-radius: 50%;
-
-    position: fixed;
-    top: 80%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-
-    width: 50px;
-    height: 50px;
-
-    display: flex;
-    justify-content: center;
-}
-
 #footer .contains .gnb .help:hover .title {
     display: block;
 }
@@ -195,8 +177,6 @@
     top: -250%;
     left: -200%;
     transform: translate(-50%, -50%);
-
-    /* background: url("/main/img/footer-gnb-back1.png") no-repeat center / cover; */
 
     width: 200px;
     height: 350px;
@@ -239,28 +219,6 @@
     align-items: center;
     text-align: center;
 }
-
-#footer .contains .gnb .help .title .nav .info .imleft {
-    background: url("main/img/footer-call.png") no-repeat center/cover;
-}
-
-#footer .contains .gnb .help .title .nav .info .imright {
-    background: url("main/img/footer-email.png") no-repeat center/cover;
-}
-
-#footer .contains .gnb .help .title .nav .info .img3 {
-    background: url("main/img/footer-instagram.png") no-repeat center/cover;
-}
-
-#footer .contains .gnb .help .title .nav .info .img4 {
-    background: url("main/img/footer-facebook.png") no-repeat center/cover;
-}
-
-#footer .contains .gnb .help .title .nav .info .img5 {
-    background: url("main/img/footer-web.png") no-repeat center/cover;
-}
-
-
 
 #footer .contains .gnb .help .title .nav .info .img {
     border: 1px solid rgb(48, 120, 203);
