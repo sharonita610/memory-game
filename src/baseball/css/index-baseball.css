@@ -320,6 +320,21 @@
     align-items: center;
 }
 
+#main .contains .contents .main-game .game-nav .nav .btn-box .score {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #333;
+
+    background: url("../img/total-score2.png") no-repeat center / cover;
+    transition: all 0.2s linear;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .score:hover {
+    transform: scale(1.2);
+}
+
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn {
     width: 75%;
     height: 100%;
@@ -327,8 +342,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img {
@@ -517,33 +530,6 @@
 /* button css begin*/
 button {
     all: unset;
-}
-
-#main .contains .contents .main-game .game-nav-sub {
-    display: flex;
-    height: 10%;
-}
-
-#main .contains .contents .main-game .game-nav-sub .nav-sub {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin: 10px auto 0;
-    width: 100%;
-}
-
-#main .contains .contents .main-game .game-nav-sub .nav-sub .btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding: 10px 0;
-    margin: 0 auto;
-
-    font-size: 14px;
-    cursor: pointer;
 }
 
 /* 광고 --------------- */
