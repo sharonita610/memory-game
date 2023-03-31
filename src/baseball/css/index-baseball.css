@@ -365,6 +365,10 @@
     display: flex;
 }
 
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view:hover {
+    display: flex;
+}
+
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view {
     border: 5px solid #000;
     position: fixed;

@@ -8,7 +8,7 @@
     ball: 0, // 볼
     input: 0, // 유저가 입력한 숫자
     clearRound: 0, // 클리어한 라운드
-    maxRound: 1,
+    maxRound: 8,
 }
 
 const $inputView = document.getElementById('input-view'); // 유저가 입력한 값을 띄워주는 부모

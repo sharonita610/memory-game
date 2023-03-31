@@ -27,11 +27,6 @@
     height: 100%;
 }
 
-/* name - container css 는  indexl-login.css 에 만들어둠 */
-/*#main .contains .contents .name-container {}*/
-
-/*게임박스 사진 css */
-/*hover 효과는 index-body-main-game.css*/
 #main .contains .contents .main-game {
     display: flex;
     flex-direction: column;
@@ -83,7 +78,6 @@
 }
 
 
-/* button css begin*/
 button {
     all: unset;
 }
