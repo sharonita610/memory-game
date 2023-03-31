@@ -146,7 +146,7 @@ button {
     box-shadow: 1px 1px 10px #333;
     display: block;
 
-    height: fit-content;
+    height: 100%;
 
 }
 

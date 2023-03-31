@@ -115,10 +115,37 @@
     backface-visibility: hidden;
 }
 
-/* 별도의 스타일 지정 토글했을때 */
+/* 카드에 별도의 스타일 지정 토글했을때 */
 .toggleCard {
     transform: rotateY(180deg);
 }
+
+ /* 클릭시 카드 게임 설명 구간 */
+#main .contains .contents .main-game .game-nav-sub .nav-sub .btn .info-btn #gameExplain {
+    display: none;
+    background: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 500px;
+    height: 340px;
+    border: 5px dashed rgba(164, 78, 205, 0.8);
+    padding: 25px;
+    color: black;
+
+    position: absolute;
+    bottom: 310px;
+    right: 80px;
+
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
 
 /* Card Game CSS End */
 

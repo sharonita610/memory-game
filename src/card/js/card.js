@@ -1,7 +1,8 @@
 //Grab a couple of things
 const section = document.querySelector('section');
 const playerLivesCount = document.querySelector('span');
-let playerLives = 6;
+let playerLives = 7;
+let score = 5;
 
 //Link text
 playerLivesCount.textContent = playerLives;
@@ -9,22 +10,22 @@ playerLivesCount.textContent = playerLives;
 //Generate the data :Array & Object
 const getData = () => [
 
-    { imgSrc: "/card/css/card-img/seahorse (1).png", name: "1"},
-    { imgSrc: "/card/css/card-img/seahorse (2).png", name: "2"},
-    { imgSrc: "/card/css/card-img/seahorse (3).png", name: "3"},
-    { imgSrc: "/card/css/card-img/seahorse (4).png", name: "4"},
-    { imgSrc: "/card/css/card-img/seahorse (5).png", name: "5"},
-    { imgSrc: "/card/css/card-img/seahorse (6).png", name: "6"},
-    { imgSrc: "/card/css/card-img/seahorse (7).png", name: "7"},
-    { imgSrc: "/card/css/card-img/seahorse (8).png", name: "8"},
-    { imgSrc: "/card/css/card-img/seahorse (1).png", name: "1"},
-    { imgSrc: "/card/css/card-img/seahorse (2).png", name: "2"},
-    { imgSrc: "/card/css/card-img/seahorse (3).png", name: "3"},
-    { imgSrc: "/card/css/card-img/seahorse (4).png", name: "4"},
-    { imgSrc: "/card/css/card-img/seahorse (5).png", name: "5"},
-    { imgSrc: "/card/css/card-img/seahorse (6).png", name: "6"},
-    { imgSrc: "/card/css/card-img/seahorse (7).png", name: "7"},
-    { imgSrc: "/card/css/card-img/seahorse (8).png", name: "8"},
+    { imgSrc: "../../card/css/card-img/seahorse (1).png", name: "1"},
+    { imgSrc: "../../card/css/card-img/seahorse (2).png", name: "2"},
+    { imgSrc: "../../card/css/card-img/seahorse (3).png", name: "3"},
+    { imgSrc: "../../card/css/card-img/seahorse (4).png", name: "4"},
+    { imgSrc: "../../card/css/card-img/seahorse (5).png", name: "5"},
+    { imgSrc: "../../card/css/card-img/seahorse (6).png", name: "6"},
+    { imgSrc: "../../card/css/card-img/seahorse (7).png", name: "7"},
+    { imgSrc: "../../card/css/card-img/seahorse (8).png", name: "8"},
+    { imgSrc: "../../card/css/card-img/seahorse (1).png", name: "1"},
+    { imgSrc: "../../card/css/card-img/seahorse (2).png", name: "2"},
+    { imgSrc: "../../card/css/card-img/seahorse (3).png", name: "3"},
+    { imgSrc: "../../card/css/card-img/seahorse (4).png", name: "4"},
+    { imgSrc: "../../card/css/card-img/seahorse (5).png", name: "5"},
+    { imgSrc: "../../card/css/card-img/seahorse (6).png", name: "6"},
+    { imgSrc: "../../card/css/card-img/seahorse (7).png", name: "7"},
+    { imgSrc: "../../card/css/card-img/seahorse (8).png", name: "8"},
 
 ];
 
@@ -66,7 +67,7 @@ const cardGenerator = () => {
 
   //Check Cards
   const checkCards = (e) => {
-    console.log(e);
+    // console.log(e);
     const clickedCard = e.target;
     clickedCard.classList.add("flipped");
     // console.log(clickedCard); 
@@ -79,8 +80,10 @@ const cardGenerator = () => {
         flippedCards[0].getAttribute('name') === 
         flippedCards[1].getAttribute('name')
         ) {
-          console.log(flippedCards);
-          console.log("match");
+          // console.log(flippedCards);
+          // console.log("match");
+          score++; //카드 맞출때 마다 점수 1점씩 부여 
+          console.log(score);
           flippedCards.forEach((card) => {
             card.classList.remove('flipped');
             card.style.pointerEvents = 'none';
@@ -93,17 +96,17 @@ const cardGenerator = () => {
             setTimeout(() => card.classList.remove('toggleCard'), 1000);
           });
           playerLives--;
-          console.log(playerLives);
-          console.log(playerLivesCount);
+          // console.log(playerLives);
+          // console.log(playerLivesCount);
           playerLivesCount.textContent = playerLives;
           if(playerLives === 0) {
-          restart("Try Again");
-        }
+          restart(`획득한 점수는 ${score}점 입니다. 뒤집기 게임 한 번 더~?`);
+        } //획득한 점수 표현 완료 
       }
     }
     //Run a check to see if we won the game
     if(toggleCard.length === 16){
-      restart("You won!");
+      restart(`획득한 점수는 ${score}점 입니다.`);
     }
   };
 
@@ -123,9 +126,26 @@ const cardGenerator = () => {
         section.style.pointerEvents = "all";
       }, 800);
     });
-    playerLives = 6;
+    playerLives = 7;
     playerLives.textContent = playerLives;
     setTimeout(() => window.alert(text), 100);
   };
 
 cardGenerator();
+
+
+//Card Game Explanation Mouse OnClick Event 
+//스크립트 선언부를 footer 아래로 내림 
+
+const $infobtn = document.querySelector('.info-btn');
+const $gameExplain =document.getElementById('gameExplain');
+// console.log($infobtn);
+
+$infobtn.addEventListener('click', () => {
+  $gameExplain.style.display = 'block';
+});
+
+$infobtn.addEventListener('mouseout', () => {
+  $gameExplain.style.display = 'none';
+});
+
