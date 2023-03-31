@@ -27,11 +27,6 @@
     height: 100%;
 }
 
-/* name - container css 는  indexl-login.css 에 만들어둠 */
-/*#main .contains .contents .name-container {}*/
-
-/*게임박스 사진 css */
-/*hover 효과는 index-body-main-game.css*/
 #main .contains .contents .main-game {
     display: flex;
     flex-direction: column;
@@ -348,44 +343,115 @@
     transition: all 0.2s linear;
 }
 
-/*     border: 5px solid rgb(64, 224, 208);
-
-    opacity: 0;
-    top: -120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all ease 1s 0s; */
-
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .img:hover~.help-view {
-    display: block;
+    display: flex;
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view {
-    border: 1px solid red;
-
+    border: 5px solid #000;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 50%;
+    height: 70%;
 
     border-radius: 100px;
 
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
     justify-content: center;
     align-items: center;
 
     background: rgba(0, 0, 0, 0.9);
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .text-box {
+    text-align-last: left;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .result span {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .result span.ball {
+    border: 5px solid #ff0000;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .result span.strike {
+    border: 5px solid #0000ff;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .user-input {
+    height: 80px;
+    margin: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .random .number {
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .random .first-number {
+    background: url("../img/input6.png") no-repeat center / cover;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .random .second-number {
+    background: url("../img/input1.png") no-repeat center / cover;
+    border: 5px solid red;
+    border-radius: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .random .third-number {
+    background: url("../img/input3.png") no-repeat center / cover;
+    border: 5px solid #0000ff;
+    border-radius: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .user-input .number {
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .user-input .first-number {
+    background: url("../img/input1.png") no-repeat center / cover;
+    border: 5px solid red;
+    border-radius: 15px;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .user-input .second-number {
+    background: url("../img/input2.png") no-repeat center / cover;
+}
+
+#main .contains .contents .main-game .game-nav .nav .btn-box .help-btn .help-view .exam .user-input .third-number {
+    background: url("../img/input3.png") no-repeat center / cover;
+    border: 5px solid #0000ff;
+    border-radius: 15px;
 }
 
 #main .contains .contents .main-game .game-nav .nav .btn-box .back-btn {
