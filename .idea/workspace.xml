@@ -6,10 +6,172 @@
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bridge/css/bridge-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/css/bridge-index-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/html/feat-bridge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-name-input/index-login.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-name-input/index-login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/css/index-baseball.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/css/index-baseball.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/back-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/back-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/baseball-back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/baseball-back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/baseball-back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/baseball-back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/help-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/help-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/history1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/history1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/history2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/history2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/history3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/history3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/input9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/input9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/logo-back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/logo-back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/logo-back1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/logo-back1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/reset-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/reset-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/result-view9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/result-view9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/round1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/round1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/round2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/round2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/round3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/round3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/round4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/round4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/start-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/start-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/start-btn1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/start-btn1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/img/start-btn3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/img/start-btn3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/index-baseball.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/index-baseball.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/js/baseball.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/js/baseball.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/js/gameData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/js/gameData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseball/js/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseball/js/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/bridge-img/bridge-img-boy1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/bridge-img/bridge-img-boy1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/bridge-img/bridge-img-fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/bridge-img/bridge-img-fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/bridge-img/bridge-img-girl1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/bridge-img/bridge-img-girl1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/css/bridge-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge-index-body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/css/bridge.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/js/bridge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/js/bridge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (2).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (3).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (3).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (4).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (4).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (5).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (6).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (6).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (7).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (7).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-img/seahorse (8).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-img/seahorse (8).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/card-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-index-body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/css/index-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/index-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/html/index-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/html/index-card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/js/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/js/card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/index-banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/index-banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img12 .jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img12 .jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/left-banner/img/left-banner-img9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/left-banner/img/left-banner-img9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-banner/right-banner/img/right-banner-img9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-banner/right-banner/img/right-banner-img9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-name-input/index-body-main-game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-name-input/index-body-main-game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-name-input/index-login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-name-input/index-login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-name-input/name-img/baseballgame.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-name-input/name-img/baseballgame.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-name-input/name-img/bridgegame.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-name-input/name-img/bridgegame.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-name-input/name-img/cardchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/index-name-input/name-img/cardchange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-result-button/main-result-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-result-button/main-result-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/css/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/brainimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/brainimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/document.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/document.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/footer-back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-back6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-call.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb-back7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-gnb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/footer-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-img4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/footer-info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-info9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/footer-nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-navback7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/footer-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/header-title.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/header-title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/seaweed.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/seaweed.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/img/wave.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/img/wave.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +233,11 @@
       <recent name="C:\memory-game" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\memory-game\src" />
       <recent name="C:\memory-game\bridge\html" />
       <recent name="C:\memory-game\index-banner\left-banner\img" />
       <recent name="C:\memory-game\main-result-button" />
       <recent name="C:\memory-game\index-name-input" />
-      <recent name="C:\memory-game\index-login\img" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript 디버그.feat-bridge.html">
