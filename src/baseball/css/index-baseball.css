@@ -704,3 +704,35 @@ button {
         transform: rotateX(-180deg);
     }
 }
+
+
+#curtain {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #curtain {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+        background: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #cutrain .text-box {
+        border: 1px solid red;
+        width: 100%;
+
+        color: #0000ff;
+    }
+
+    #cutrain .img {
+        width: 100%;
+        border: 1px solid red;
+    }
+
+}
