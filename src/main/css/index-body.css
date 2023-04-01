@@ -201,7 +201,7 @@ button {
 
 }
 
-#main .banner1 img {
+#main .banner2 img {
     display: block;
 
 
@@ -209,7 +209,7 @@ button {
 
 
     width: 100%;
-    height: min-content;
+    height: 100%;
 
     object-fit: fill;
 }

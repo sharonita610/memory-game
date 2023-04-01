@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/bridge/js/bridge-info-btn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/css/index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/css/index-body.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
