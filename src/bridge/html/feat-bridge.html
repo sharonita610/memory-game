@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>해마 키우기</title>
+	<title>징검다리 게임</title>
 
 	<!-- reset css -->
 	<link rel="stylesheet" href="../../common/css/common.css">
@@ -40,6 +40,8 @@
 	<link rel="stylesheet" href="../../bridge/css/bridge.css">
 
 	<!--js -->
+	<script src="../../bridge/js/game-btn.js"/>
+	</script>
 
 
 </head>
@@ -131,7 +133,7 @@
 							<!--game box left-->
 							<div id="bridge-left">
 								<div>
-									<span>온 힘을 다 해서 살아남으세요</span>
+									<span></span>
 								</div>
 							</div>
 							<!--game box main-->
@@ -141,7 +143,6 @@
 									<div class="bridge-content">
 										<div class="start">
 											<div class="character" id="char-start">
-												<img src="../bridge-img/bridge-img-girl1.jpg">
 											</div>
 										</div>
 										<div class="bridge-pannel">
@@ -164,7 +165,6 @@
 										</div>
 										<div class="finish">
 											<div class="character" id="char-finish">
-												<img src="../bridge-img/bridge-img-fail.png">
 
 											</div>
 										</div>
@@ -173,7 +173,7 @@
 							</div>
 							<div id="bridge-right">
 								<div>
-									<span>시작,다시시작,끝내기 버튼 자리</span>
+									<span></span>
 								</div>
 							</div>
 						</div>
@@ -181,7 +181,7 @@
 					<div class="game-nav-sub">
 						<ul class="nav-sub">
 							<li class="btn">
-								<a href="../../../index.html" class="start-btn start-btn">
+								<a href class="start-btn start-btn" id="bridge-btn">
 									<span>클릭!</span><span>돌아가기</span>
 								</a>
 							</li>
@@ -348,13 +348,17 @@
 
   // 왼쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
   $leftBtn.forEach($li => {
-    $li.addEventListener('click', clickLeftAlert);
+    if(gameData.clearRound < 6) {
+      $li.addEventListener('click', clickLeftAlert);
+    }
   });
 
   // 오른쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
   $rightBtn.forEach($li => {
-    $li.addEventListener('click', clickRightAlert);
-  })
+    if(gameData.clearRound < 6) {
+      $li.addEventListener('click', clickRightAlert);
+    }
+  });
 
   // $btn 태그에게 disabled=true 를 추가하는 함수 (true는 클릭이 안 됨)
   function setDisabled($btn) {
@@ -448,9 +452,11 @@
           // 라운드 올리기
           gameData.round++; //6 7
 
-          if (gameData.round < 7) {
-            alert("정답입니다! 한 칸 앞으로 이동했습니다!");
-            alert("다음 옵션을 선택하세요");
+          if (gameData.round <= 7) {
+            alert("정답입니다! 한 칸 앞으로 이동했습니다! \n    다음 옵션을 선택하세요");
+            if (gameData.round === 7) {
+              alert(`승리하셨습니다.\n${gameData.clickCount}번 만에 성공하였습니다.`);
+            }
           }
 
         } else {
@@ -462,6 +468,9 @@
 
     })
   })
+
+
+
 
 </script>
 
