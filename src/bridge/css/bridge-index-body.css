@@ -100,6 +100,7 @@ button {
     justify-content: space-between;
 
     margin: 10px auto 0;
+    margin: 10px auto 0;
     width: 100%;
 }
 
@@ -150,7 +151,7 @@ button {
 
 }
 
-#main .banner1 img {
+#main .banner2 img {
     display: block;
 
 
@@ -158,7 +159,7 @@ button {
     width: 100%;
     height: min-content;
 
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /* 광고 --------------- */

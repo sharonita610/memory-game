@@ -5,7 +5,12 @@ const gameData = {
   result: [], // 정답을 가지고 있을 배열
   round: 1, // 현재 단계
   clearRound: 0, // 최종 클리어한 단계
+  checkFinal: 0,
+  clickCount: 0,
+  endRound: 0,
 }
+
+gameData.checkFinal = gameData.clearRound;
 
 // 난수 생성 함수 (return 0 or 1)
 function getRandomNumber() {
@@ -33,8 +38,8 @@ const $rightBtn = [...document.getElementById('bridge-right-btn').children];
 // 클릭했을 때 알람을 띄우는 함수 (왼쪽 다리, 테스트용)
 function clickLeftAlert() {
   alert("왼쪽 다리 클릭됨!");
-
 }
+
 // 클릭했을 때 알람을 띄우는 함수 (오른쪽 다리, 테스트용)
 function clickRightAlert() {
   alert("오른쪽 다리 클릭됨!");
@@ -42,13 +47,17 @@ function clickRightAlert() {
 
 // 왼쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
 $leftBtn.forEach($li => {
-  $li.addEventListener('click', clickLeftAlert);
+  if (gameData.clearRound < 6) {
+    $li.addEventListener('click', clickLeftAlert);
+  }
 });
 
 // 오른쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
 $rightBtn.forEach($li => {
-  $li.addEventListener('click', clickRightAlert);
-})
+  if (gameData.clearRound < 6) {
+    $li.addEventListener('click', clickRightAlert);
+  }
+});
 
 // $btn 태그에게 disabled=true 를 추가하는 함수 (true는 클릭이 안 됨)
 function setDisabled($btn) {
@@ -72,7 +81,7 @@ removeDisabled($rightBtn[0]);
 // 다리들에게 정답을 부여하기
 // key 값은 'result' 이며 밸류는 0과 1 두 개만 존재
 for (let i = 0; i < 6; i++) {
-  if (gameData.result[i] === 1) {
+  if (gameData.result[i]) {
     $leftBtn[i].setAttribute('result', 1);
     $rightBtn[i].setAttribute('result', 0);
   } else {
@@ -107,122 +116,54 @@ function resetBridge() {
   gameData.round = 1;
 }
 
-
-// 왼쪽 다리 정답을 확인하는 함수
-function leftCheckResult() {
-  const $leftBridge = $leftBtn[gameData.clearRound];
-  const bridgeResult = +$leftBridge.getAttribute('result');
-
-  const $rightBridge = $rightBtn[gameData.clearRound];
-
-  if (bridgeResult === 1) {
-    // ✅ 정답(1)일 경우 ✅
-
-    // 현재 버튼 클릭 불가로 설정 (left right 둘 다)
-    setDisabled($leftBridge);
-    setDisabled($rightBridge);
-
-    // 현재 클리어한 라운드를 최종 라운드로 갱신
-    // 비교해서 큰 값 추가
-    // gameData 시도 횟수를 키로 추가해서
-    gameData.clearRound = gameData.round;
-
-    // round 1 상승
-    gameData.round++;
-
-    // 다음 버튼 클릭 허용 (왼쪽, 오른쪽 모두 허용해야함)
-    // 부모 호출 후 해당 id 값이 라운드와 같다면 disabled 해제시키기
-    $leftBtn.forEach($btn => {
-      if (+$btn.getAttribute('id') === gameData.round) {
-        removeDisabled($btn);
-      }
-    });
-
-    $rightBtn.forEach($btn => {
-      if (+$btn.getAttribute('id') === gameData.round) {
-        removeDisabled($btn);
-      }
-    });
-
-  } else {
-    // ❌ 오답(1)일 경우 ❌
-    alert("left 오답이다.");
-    // reset
-    resetBridge();
+function endGame() {
+  if (gameData.round === 7) {
+    alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!\n${gameData.clickCount}번 만에 성공하였습니다.`);
+    return false;
   }
+  return true;
 }
 
-function rightCheckResult() {
-  const $rightBridge = $rightBtn[gameData.clearRound];
-  const bridgeResult = +$rightBridge.getAttribute('result');
+const $leftBtnList = [...document.querySelector('#bridge-left-btn').children];
+const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
 
-  const $leftBridge = $leftBtn[gameData.clearRound];
 
-  if (bridgeResult === 1) {
-    // ✅ 정답(1)일 경우 ✅
+[$leftBtnList, $rightBtnList].forEach($list => {
 
-    // 현재 버튼 클릭 불가로 설정 (left right 둘 다)
-    setDisabled($rightBridge);
-    setDisabled($leftBridge);
+  $list.forEach($btn => {
+    console.log($btn);
+    $btn.onclick = function checkResult() {
 
-    // 현재 클리어한 라운드를 최종 라운드로 갱신
-    gameData.clearRound = gameData.round;
+      let checkNum = +$btn.getAttribute('result');
 
-    // round 1 상승
-    gameData.round++;
+      // 1. click ++
+      gameData.clickCount++;
 
-    // 다음 버튼 클릭 허용 (왼쪽, 오른쪽 모두 허용해야함)
-    // 부모 호출 후 해당 id 값의
-    $leftBtn.forEach($btn => {
-      if (+$btn.getAttribute('id') === gameData.round) {
-        removeDisabled($btn);
+      if (checkNum) {
+        // 나랑 짝꾹 클릭 x
+        setDisabled($leftBtnList[gameData.round - 1]);
+        setDisabled($rightBtnList[gameData.round - 1]);
+
+        // 형 클릭 되게 하고
+        removeDisabled($leftBtnList[gameData.round]);
+        removeDisabled($rightBtnList[gameData.round]);
+
+        // 라운드 올리기
+        gameData.round++; //6 7
+
+        if (gameData.round <= 7) {
+          alert("정답입니다! 한 칸 앞으로 이동했습니다! \n    다음 옵션을 선택하세요");
+          if (gameData.round === 7) {
+            alert(`승리하셨습니다.\n${gameData.clickCount}번 만에 성공하였습니다.`);
+          }
+        }
+
+      } else {
+        alert(`    ※정답이 아닙니다※ \n 처음부터 다시 시작하세요!`);
+        resetBridge();
       }
-    });
 
-    $rightBtn.forEach($btn => {
-      if (+$btn.getAttribute('id') === gameData.round) {
-        removeDisabled($btn);
-      }
-    });
+    }
 
-  } else {
-    // ❌ 오답(1)일 경우 ❌
-    alert("right 오답이다.");
-    // reset
-    resetBridge();
-  }
-}
-
-// 왼쪽 다리 버튼 onclick 이벤트에 정답을 확인하는 함수 추가하기
-$leftBtn.forEach($li => {
-  $li.addEventListener('click', leftCheckResult);
-});
-
-// 오른쪽 다리 버튼 onclick 이벤트에 정답을 확인하는 함수 추가하기
-$rightBtn.forEach($li => {
-  $li.addEventListener('click', rightCheckResult);
+  })
 })
-
-console.log(gameData.result);
-
-
-// 클릭했을 때 이미지를 업데이트 시키는 함수
-
-// 👆 ---------------------------- bridge setup ---------------------------- 👆 //
-
-
-
-
-
-//👇 ---------------------------- bridge img ---------------------------- 👇 //
-
-// endGame 함수 (clearRound가 6이 될 때가 게임을 다 깼을 때)
-
-function endGame(clearRound){
-  if(clearRound <= 6);{
-    alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!\n 게임을 종료합니다.`);
-  }
-}
-
-
-//👆 ---------------------------- bridge img ---------------------------- 👆 //

@@ -119,7 +119,6 @@
     will-change: transform;
     animation: letterRun 400s linear infinite;
 
-
 }
 
 @keyframes letterRun {
@@ -130,6 +129,8 @@
         transform: translateX(-100%);
     }
 }
+
+/*게임설명 버튼 속성 hover 종료*/
 
 
 
@@ -206,12 +207,10 @@ button {
 
 
     margin-bottom: 13px;
-
-
     width: 100%;
-    height: 100%;
+    height: min-content;
 
-    object-fit: fill;
+    object-fit: cover;
 }
 
 

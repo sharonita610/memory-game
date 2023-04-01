@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/bridge/js/bridge-info-btn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/css/bridge-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge-index-body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/css/bridge.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/docs/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/js/bridge-info-btn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/js/bridge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/js/bridge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card/css/card-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-index-body.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/css/index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/css/index-body.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +82,7 @@
       <recent name="C:\memory-game\index-name-input" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 디버그.feat-bridge.html">
+  <component name="RunManager" selected="Node.js.bridge.js">
     <configuration name="CountDown.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/memory-game/CountDown.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -91,8 +95,12 @@
     <configuration name="CountDown.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/CountDown.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="bridge.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/bridge/js/bridge.js" working-dir="$PROJECT_DIR$/src/bridge/js">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.bridge.js" />
         <item itemvalue="JavaScript 디버그.feat-bridge.html" />
         <item itemvalue="Node.js.CountDown.js" />
       </list>
