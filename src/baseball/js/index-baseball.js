@@ -1,7 +1,6 @@
 import user from "../../main/js/user.js";
 
 (function () {
-
     // <--------------------------- gameData setup ---------------------------> //
     const gameData = {
         result: [], // 정답 배열
@@ -16,13 +15,14 @@ import user from "../../main/js/user.js";
         maxRound: 4,
     }
 
-
     const $inputView = document.getElementById('input-view'); // 유저가 입력한 값을 띄워주는 부모
     const $inputBtnBox = document.getElementById('input-btn-box'); // 유저가 누르는 버튼들의 부모
     const $resultBtn = document.getElementById('result-btn');
     const $scoreInfo = document.getElementById('score-info');
     const $resetBtn = document.getElementById('reset-btn');
     const $roundView = document.getElementById('round-view');
+    const $clear = document.getElementById('clear');
+    const $clickBtn = document.querySelector('.click-btn');
 
     // 0 이상 10 미만의 난수 생성
     function getRandomNumber() {
@@ -40,6 +40,8 @@ import user from "../../main/js/user.js";
             $scoreInfo.setAttribute('id', 'hide');
             $resetBtn.setAttribute('id', 'hide');
             $roundView.setAttribute('id', 'hide');
+            $clear.style.display = 'flex';
+            $clickBtn.style.display = 'block';
             return;
         }
 
