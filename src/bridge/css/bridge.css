@@ -15,7 +15,7 @@
     flex: 1;
 }
 .contains .contents .main-game .game-nav .bridge-game #bridge-start{
-    flex: 8;
+    flex: 7;
 }
 .contains .contents .main-game .game-nav .bridge-game #bridge-right{
     flex:1;
@@ -59,10 +59,10 @@
     display: block;
     background: url("../bridge-img/bridge-img-main.jpg") no-repeat;
     margin-top: 5%;
-    height: 80%;
+    height: 0%;
     width: 100%;
     padding: 20px;
-    object-fit: cover;
+    object-fit: contain;
 
     filter: drop-shadow(5px 10px 5px #000);
 
@@ -75,8 +75,17 @@
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
+    position: relative;
 
 
+}
+.contains .contents .main-game .game-nav .bridge-game p {
+    height: 10%;
+    position: absolute;
+    display: block;
+    margin-left: 15%;
+    padding-top: 10px;
+    font-size: 25px;
 }
 
 /*전체적인 틀 확인하기 위한 코드*/
@@ -194,6 +203,11 @@
     margin: auto;
     box-shadow: rgba(141, 155, 169,59);
 }
+.contains .contents .main-game .game-nav .bridge-game #bridge-start
+.bridge-container .bridge-content .bridge-pannel .left , .right{
+    color: #fff;
+    padding-left: 25px;
+}
 
 .contains .contents .main-game .game-nav .bridge-game #bridge-start
 .bridge-container .bridge-content .bridge-pannel button:active {
@@ -222,3 +236,38 @@
 }
 
 /*게임판 중 가장 오른쪽 종료*/
+
+
+/*게임설명 버튼 속성 hovdr 시작*/
+#main .contains .contents .main-game  .bridge-game-explain  {
+
+    width: 70%;
+    height: 100%;
+
+    position: relative;
+}
+
+#main .contains .contents .main-game .game-nav-sub .nav-sub
+.btn .bridge-game-explain #bridge-howto {
+    background: #dbebf1;
+    opacity: 0.9;
+    border-radius: 5%;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    bottom: 300px;
+    right: 10px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 18px;
+    display: none;
+    text-align: left;
+
+}
+
+#main .contains .contents .main-game .game-nav-sub .nav-sub
+.btn .start-btn:hover .bridge-game-explain #bridge-howto {
+    display: block !important;
+
+}
+/*게임설명 버튼 속성 hover 종료*/

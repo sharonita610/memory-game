@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Ko">
+<html lang="Ko" xmlns:display="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="../../common/css/common.css">
 
 	<!-- tap 아이콘 이미지 -->
-	<link rel="icon" href="../../main/img/document.png" />
-	<link rel="apple-touch-icon" href="../../main/img/document.png" />
+	<link rel="icon" href="../../main/img/document.png"/>
+	<link rel="apple-touch-icon" href="../../main/img/document.png"/>
 
 	<!-- css -->
 	<link rel="stylesheet" href="../../../src/main/css/index-body.css">
@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="../../../src/main/css/index-header.css">
 
 	<link rel="stylesheet" href="../css/bridge-index-body.css">
+	<link rel="stylesheet" href="../css/bridge.css">
+
 	<link rel="stylesheet" href="../../index-banner/index-banner.css">
 	<link rel="stylesheet" href="../../index-name-input/index-login.css">
 	<link rel="stylesheet" href="../../index-name-input/index-body-main-game.css">
@@ -39,185 +41,190 @@
 	<!-- bridge.css -->
 	<link rel="stylesheet" href="../../bridge/css/bridge.css">
 
-	<!--js -->
-	<script src="../../bridge/js/game-btn.js" />
-	</script>
-
 
 </head>
 
+
+
 <body>
 
-	<div id="wrraper">
-		<header id="header">
-			<div class="contains">
-				<div class="title-img">
-					<div class="imleft"></div>
-					<div class="imright"></div>
-				</div>
-				<div class="title">
-					<h1><em id="green">기억력</em> 게임으로<br>
-						내 안의 <em>해마</em> 키우기
-					</h1>
-					<div id="logoImage"></div>
-				</div>
-				<div class="sub-img">
+<div id="wrraper">
+	<header id="header">
+		<div class="contains">
+			<div class="title-img">
+				<div class="imleft"></div>
+				<div class="imright"></div>
+			</div>
+			<div class="title">
+				<h1><em id="green">기억력</em> 게임으로<br>
+					내 안의 <em>해마</em> 키우기
+				</h1>
+				<div id="logoImage"></div>
+			</div>
+			<div class="sub-img"></div>
+		</div>
+
+	</header>
+
+
+	<!-- main body 시작-->
+	<div id="main">
+		<!-- banner 1 begin-->
+		<div class="banner1" id="left-banner">
+			<div id="slider">
+				<div class="image-box">
+					<div><img src="../../index-banner/left-banner/img/left-banner-img1.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img2.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img3.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img4.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img6.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img8.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img9.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img10.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img11.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img13.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img14.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img15.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img16.png"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img17.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img18.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img19.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img20.png"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img21.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img22.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img23.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img24.jpg"/></div>
+					<div><img src="../../index-banner/left-banner/img/left-banner-img25.jpg"/></div>
+					<!--clone-->
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img1.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img2.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img3.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img4.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img6.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img8.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img9.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img10.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img11.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img13.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img14.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img15.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img16.png"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img17.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img18.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img19.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img20.png"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img21.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img22.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img23.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img24.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img25.jpg"/></div>
 				</div>
 			</div>
+		</div>
+		<!-- banner 1 end-->
+		<div class="contains">
+			<div class="contents">
+				<div class="main-game">
+					<div class="game-nav">
+						<div class="nav bridge-game">
+							<p>오징어게임에 참가한 당신! 게임을 해서 살아님으면 '456'억이 모두 당신 것입니다!</p>
+							<!--Bridge Game begin-->
 
-		</header>
-
-
-		<!-- main body 시작-->
-		<div id="main">
-			<!-- banner 1 begin-->
-			<div class="banner1" id="left-banner">
-				<div id="slider">
-					<div class="image-box">
-						<div><img src="../../index-banner/left-banner/img/left-banner-img1.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img2.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img3.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img4.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img6.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img8.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img9.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img10.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img11.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img13.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img14.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img15.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img16.png" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img17.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img18.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img19.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img20.png" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img21.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img22.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img23.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img24.jpg" /></div>
-						<div><img src="../../index-banner/left-banner/img/left-banner-img25.jpg" /></div>
-						<!--clone-->
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img1.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img2.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img3.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img4.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img6.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img8.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img9.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img10.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img11.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img13.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img14.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img15.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img16.png" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img17.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img18.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img19.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img20.png" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img21.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img22.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img23.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img24.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/left-banner/img/left-banner-img25.jpg" /></div>
-					</div>
-				</div>
-			</div>
-			<!-- banner 1 end-->
-			<div class="contains">
-				<div class="contents">
-					<div class="main-game">
-						<div class="game-nav">
-							<div class="nav bridge-game">
-								<!--Bridge Game begin-->
-
-								<!--game box left-->
-								<div id="bridge-left">
-									<div>
-										<span></span>
-									</div>
+							<!--game box left-->
+							<div id="bridge-left">
+								<div>
+									<span></span>
 								</div>
-								<!--game box main-->
-								<!-- LV 1-->
-								<div id="bridge-start">
-									<div class="bridge-container">
-										<div class="bridge-content">
-											<div class="start">
-												<div class="character" id="char-start">
-												</div>
-											</div>
-											<div class="bridge-pannel">
-												<div class="left" id="bridge-left-btn">
-													<button id="l1" class="glass left"></button>
-													<button id="l2" class="glass left"></button>
-													<button id="l3" class="glass left"></button>
-													<button id="l4" class="glass left"></button>
-													<button id="l5" class="glass left"></button>
-													<button id="l6" class="glass left"></button>
-												</div>
-												<div class="right" id="bridge-right-btn">
-													<button id="r1" class="glass right"></button>
-													<button id="r2" class="glass right"></button>
-													<button id="r3" class="glass right"></button>
-													<button id="r4" class="glass right"></button>
-													<button id="r5" class="glass right"></button>
-													<button id="r6" class="glass right"></button>
-												</div>
-											</div>
-											<div class="finish">
-												<div class="character" id="char-finish">
+							</div>
+							<!--game box main-->
+							<!-- LV 1-->
 
-												</div>
+							<div id="bridge-start">
+								<div class="bridge-container">
+									<div class="bridge-content">
+										<div class="start">
+											<div class="character" id="char-start">
+											</div>
+										</div>
+										<div class="bridge-pannel">
+											<div class="left" id="bridge-left-btn">
+												<button id="l1" class="glass left">시작</button>
+												<button id="l2" class="glass left"></button>
+												<button id="l3" class="glass left"></button>
+												<button id="l4" class="glass left"></button>
+												<button id="l5" class="glass left"></button>
+												<button id="l6" class="glass left">종료</button>
+											</div>
+											<div class="right" id="bridge-right-btn">
+												<button id="r1" class="glass right">시작</button>
+												<button id="r2" class="glass right"></button>
+												<button id="r3" class="glass right"></button>
+												<button id="r4" class="glass right"></button>
+												<button id="r5" class="glass right"></button>
+												<button id="r6" class="glass right">종료</button>
+											</div>
+										</div>
+										<div class="finish">
+											<div class="character" id="char-finish">
 											</div>
 										</div>
 									</div>
 								</div>
-								<div id="bridge-right">
-									<div>
-										<span></span>
-									</div>
+							</div>
+							<div id="bridge-right">
+								<div>
+									<span></span>
 								</div>
 							</div>
 						</div>
-						<div class="game-nav-sub">
-							<ul class="nav-sub">
-								<li class="btn">
-									<a href="../../../index.html" class="start-btn start-btn" id="bridge-btn">
-										<span>클릭!</span><span>돌아가기</span>
-									</a>
-								</li>
-								<li class="btn">
-									<button class="start-btn info-btn">
-										<span>클릭!</span><span>게임설명</span>
-									</button>
-								</li>
-							</ul>
-						</div>
+					</div>
+					<div class="game-nav-sub">
+						<ul class="nav-sub">
+							<li class="btn">
+								<a href="../../../index.html" class="start-btn start-btn" id="bridge-btn">
+									<span>클릭!</span><span>돌아가기</span>
+								</a>
+							</li>
+							<li class="btn">
+								<button class="start-btn" id="info-btn1">
+									<span>클릭!</span><span>게임설명</span>
+									<div class="bridge-game-explain ">
+										<div id="bridge-howto"><br><br>
+											1. 유저는 시작 지점에서 게임을 시작합니다.<br>
+											2. 앞에 놓여진 다리의 왼쪽 또는 오른쪽 중 하나를 선택합니다.<br>
+											- 정답이라면 한 칸 앞으로 이동하고 바로 다음 선택을 합니다.<br>
+											- 오답이라면 도달한 단계와 상관 없이 처음으로 돌아가서 다시 시작해야합니다.<br>
+											3. 반복하여 종료 지점까지 도달한다면 성공입니다.<br>
+											4. 한 게임이 마칠 때까지 정답은 한 가지 이므로 앞서 누른 지점을 잊지마세요!<br>
+										</div>
+									</div>
+								</button>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-
-			<div class="banner2">
-				<div id="right-slider">
-					<div class="right-image-box">
-						<div><img src="../../index-banner/right-banner/img/right-banner-img1.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img2.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img5.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img6.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img7.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img8.png" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img9.jpg" /></div>
-						<div><img src="../../index-banner/right-banner/img/right-banner-img10.jpg" /></div>
-						<!-- clone -->
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img1.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img2.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img5.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img6.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img7.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img8.png" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img9.jpg" /></div>
-						<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img10.jpg" />
-						</div>
-					</div>
+		</div>
+		<div class="banner2">
+			<div id="right-slider">
+				<div class="right-image-box">
+					<div><img src="../../index-banner/right-banner/img/right-banner-img1.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img2.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img5.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img6.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img7.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img8.png"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img9.jpg"/></div>
+					<div><img src="../../index-banner/right-banner/img/right-banner-img10.jpg"/></div>
+					<!-- clone -->
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img1.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img2.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img5.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img6.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img7.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img8.png"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img9.jpg"/></div>
+					<div class="clone"><img src="../../index-banner/right-banner/img/right-banner-img10.jpg"/></div>
 				</div>
 			</div>
 		</div>
@@ -233,7 +240,7 @@
 							<div class="img img1"><a href="#" class="common"></a></div>
 							<h3 class="sub-title">카드<span>총 20개의 카드를<br>기억해보자</span></h3>
 							<div class="info info1">
-								<div class="info-back">글쎄? 해마는 충분히<br>키웠는가?<br>색깔을 보면 알 수 있지!<br>컬러풀한게 유행이야
+								<div class="info-back">우승을 축하합니다.<br>왜지?<br>왜 이런 짓을 하는 거지?
 								</div>
 							</div>
 						</div>
@@ -243,8 +250,7 @@
 							<div class="img img2"><a href="#" class="common"></a></div>
 							<h3 class="sub-title">야구<span>총 7단계의<br>숫자 야구 게임!!</span></h3>
 							<div class="info info2">
-								<div class="info-back">정 어렵다면.. 숫자 1개씩만<br>선택해서 입력해봐..<br>전략을 잘 세우라구!<br>나머진 너의 해마를
-									믿어봐
+								<div class="info-back">사람은 믿을만 해서.<br> 믿는게 아니야.<br>안그러면 기댈.<br> 데가 없어 믿는거지.
 								</div>
 							</div>
 						</div>
@@ -254,7 +260,7 @@
 							<div class="img img3"><a href="#" class="common"></a></div>
 							<h3 class="sub-title">다리<span>시간 제한없는<br>기억력 게임!</span></h3>
 							<div class="info info3">
-								<div class="info-back">재밌었다면 돌아가기 전에<br>광고 한 번만 클릭해줘 👉<br>혹시 쿠팡에서 필요한 건<br>없고?
+								<div class="info-back">우린 깐부잖아.<br>깐부 사이에는,<br>네 거 내거가 없는거야.
 								</div>
 							</div>
 						</div>
@@ -310,177 +316,9 @@
 		<div class="img"></div>
 	</div>
 
-	<script>
-		// 👇 ---------------------------- gameData setup ---------------------------- 👇 //
-
-		// gameData
-		const gameData = {
-			result: [], // 정답을 가지고 있을 배열
-			round: 1, // 현재 단계
-			clearRound: 0, // 최종 클리어한 단계
-			checkFinal: 0,
-			clickCount: 0,
-			endRound: 0,
-		}
-
-		gameData.checkFinal = gameData.clearRound;
-
-		// 난수 생성 함수 (return 0 or 1)
-		function getRandomNumber() {
-			return Math.floor(Math.random() * 10) % 2;
-		}
-
-		// result setup [ ex) console.log(gameData.result) 👉 [0, 1, 1, 0, 1, 1] ]
-		function setResult() {
-			gameData.result.push(getRandomNumber());
-		}
-
-		// 6단계까지 답 생성하기 (위의 함수 6번 호출(번호 6개 추가))
-		for (let i = 0; i < 6; i++) {
-			setResult();
-
-		}
-		// 👆 ---------------------------- gameData setup ---------------------------- 👆 //
-
-
-		// 👇 ---------------------------- bridge setup ---------------------------- 👇 //
-		// 부모를 호출해서 자식태그들을 배열로 선언
-		const $leftBtn = [...document.getElementById('bridge-left-btn').children];
-		const $rightBtn = [...document.getElementById('bridge-right-btn').children];
-
-		// 클릭했을 때 알람을 띄우는 함수 (왼쪽 다리, 테스트용)
-		function clickLeftAlert() {
-			alert("왼쪽 다리 클릭됨!");
-		}
-
-		// 클릭했을 때 알람을 띄우는 함수 (오른쪽 다리, 테스트용)
-		function clickRightAlert() {
-			alert("오른쪽 다리 클릭됨!");
-		}
-
-		// 왼쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
-		$leftBtn.forEach($li => {
-			if (gameData.clearRound < 6) {
-				$li.addEventListener('click', clickLeftAlert);
-			}
-		});
-
-		// 오른쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
-		$rightBtn.forEach($li => {
-			if (gameData.clearRound < 6) {
-				$li.addEventListener('click', clickRightAlert);
-			}
-		});
-
-		// $btn 태그에게 disabled=true 를 추가하는 함수 (true는 클릭이 안 됨)
-		function setDisabled($btn) {
-			$btn.setAttribute('disabled', true);
-		}
-
-		// $btn 태그에게 disabled를 삭제함 (클릭이 됨)
-		function removeDisabled($btn) {
-			$btn.removeAttribute('disabled');
-		}
-
-		// 왼쪽 다리와 오른쪽 다리 전부를 클릭 불가하게 만듬
-		$leftBtn.forEach($li => setDisabled($li));
-		$rightBtn.forEach($li => setDisabled($li));
-
-		// 왼쪽, 오른쪽 다리의 첫번째 자식은 클릭이 되게끔 disabled 해제
-		removeDisabled($leftBtn[0]);
-		removeDisabled($rightBtn[0]);
-
-		// gameData.result 가 가지고 있는 정답 배열을 기준으로
-		// 다리들에게 정답을 부여하기
-		// key 값은 'result' 이며 밸류는 0과 1 두 개만 존재
-		for (let i = 0; i < 6; i++) {
-			if (gameData.result[i]) {
-				$leftBtn[i].setAttribute('result', 1);
-				$rightBtn[i].setAttribute('result', 0);
-			} else {
-				$leftBtn[i].setAttribute('result', 0);
-				$rightBtn[i].setAttribute('result', 1);
-			}
-		}
-
-		// 👆 현재 상태는 1번째 다리만 클릭이되고 나머지 다리는 클릭이 불가함
-
-		// --- 아래의 코드부터는 클릭 했을 때 정답(1)일 경우와, 오답(0)일 경우로 나누어 로직을 구현 --- //
-
-		// ✅ 정답(1)일 경우 ✅
-		// ->> 클릭된 버튼에게 disabled=true를 부여해 클릭이 안 되게 만듬
-		// ->> left, right 버튼 둘 다 클릭이 안 되게 만들어야함
-		// ❌ 오답(1)일 경우 ❌
-		// ->> round를 1단계로 초기화하고 맨 처음 셋업(1번 다리만 클릭이 가능하게)으로 돌려놔야 함
-
-
-		// ❌ 오답(1)일 경우 ❌ 초기화하는 함수
-		function resetBridge() {
-
-			// 왼쪽 다리와 오른쪽 다리 전부를 클릭 불가하게 만듬
-			$leftBtn.forEach($li => setDisabled($li));
-			$rightBtn.forEach($li => setDisabled($li));
-
-			// 왼쪽, 오른쪽 다리의 첫번째 자식은 클릭이 되게끔 disabled 해제
-			removeDisabled($leftBtn[0]);
-			removeDisabled($rightBtn[0]);
-
-			// round 1단계로 초기화
-			gameData.round = 1;
-		}
-
-		function endGame() {
-			if (gameData.round === 7) {
-				alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!\n${gameData.clickCount}번 만에 성공하였습니다.`);
-				return false;
-			}
-			return true;
-		}
-
-		const $leftBtnList = [...document.querySelector('#bridge-left-btn').children];
-		const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
-
-
-		[$leftBtnList, $rightBtnList].forEach($list => {
-
-			$list.forEach($btn => {
-				console.log($btn);
-				$btn.onclick = function checkResult() {
-
-					let checkNum = +$btn.getAttribute('result');
-
-					// 1. click ++
-					gameData.clickCount++;
-
-					if (checkNum) {
-						// 나랑 짝꾹 클릭 x
-						setDisabled($leftBtnList[gameData.round - 1]);
-						setDisabled($rightBtnList[gameData.round - 1]);
-
-						// 형 클릭 되게 하고
-						removeDisabled($leftBtnList[gameData.round]);
-						removeDisabled($rightBtnList[gameData.round]);
-
-						// 라운드 올리기
-						gameData.round++; //6 7
-
-						if (gameData.round <= 7) {
-							alert("정답입니다! 한 칸 앞으로 이동했습니다! \n    다음 옵션을 선택하세요");
-							if (gameData.round === 7) {
-								alert(`승리하셨습니다.\n${gameData.clickCount}번 만에 성공하였습니다.`);
-							}
-						}
-
-					} else {
-						alert(`    ※정답이 아닙니다※ \n 처음부터 다시 시작하세요!`);
-						resetBridge();
-					}
-
-				}
-
-			})
-		})
-	</script>
+</div>
+<!--js -->
 </body>
+<script src="../../bridge/js/bridge.js"></script>
 
 </html>
