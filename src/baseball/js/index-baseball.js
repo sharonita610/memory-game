@@ -12,7 +12,8 @@ import user from "../../main/js/user.js";
         ball: 0, // 볼
         input: 0, // 유저가 입력한 숫자
         clearRound: 0, // 클리어한 라운드
-        maxRound: 8,
+        // maxRound: 8,
+        maxRound: 4,
     }
 
 
@@ -49,6 +50,8 @@ import user from "../../main/js/user.js";
                 gameData.result.push(number);
             }
         }
+        // test
+        console.log(gameData.result);
     }
 
     // gameData.result 셋업
@@ -94,7 +97,6 @@ import user from "../../main/js/user.js";
     // <--------------------------- input-btn-box 버튼 생성 ---------------------------> //
 
     function setInputBtn() {
-        // test
 
         for (let i = 0; i < 10; i++) {
 
@@ -195,7 +197,6 @@ import user from "../../main/js/user.js";
     $resultBtn.addEventListener('click', viewInfoScore);
     $resultBtn.addEventListener('click', reset);
     $resultBtn.addEventListener('click', roundUp);
-
     $resetBtn.addEventListener('click', reset);
 
     // <--------------------------- result-btn 버튼 클릭 이벤트 처리 ---------------------------> //
