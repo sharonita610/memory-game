@@ -11,7 +11,7 @@
     height: 30%;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #333;
-    
+
 }
 
 #main .contains .contents .name-container:hover {
@@ -133,7 +133,7 @@ input:focus {
     box-shadow: 4px 4px #000000;
 
     transition: transform 50ms,
-        box-shadow 50ms;
+    box-shadow 50ms;
 }
 
 #name-start-btn:hover {

@@ -13,7 +13,7 @@
 })()
 
 // 하단 버튼 이벤트
-
+// why us 버튼
 const $infobtn = document.querySelector('.info-btn');
 const $gameExplain =document.querySelector('#index-why-us');
 
@@ -24,7 +24,7 @@ $infobtn.onclick = function() {
     $gameExplain.style.display = 'none';
   }
 };
-
+// 결과보기 버튼
 const $resultbtn = document.querySelector('.result-btn');
 const $resultScore =document.querySelector('#index-result-score');
 $resultbtn.onclick = function() {
@@ -34,3 +34,13 @@ $resultbtn.onclick = function() {
     $resultScore.style.display = 'none';
   }
 };
+
+// <————————————— 광고 클릭 이벤트 —————————————> //
+const $slider = document.getElementById('slider');
+const $rightSlider = document.getElementById('right-slider');
+$slider.addEventListener('click', coupang);
+$rightSlider.addEventListener('click', coupang);
+
+function coupang() {
+  window.location.href = 'https://link.coupang.com/a/TPqZ7';
+}

@@ -184,3 +184,14 @@ $infobtn.onclick = function() {
   }
 };
 
+// <————————————— 광고 클릭 이벤트 —————————————> //
+const $slider = document.getElementById('slider');
+const $rightSlider = document.getElementById('right-slider');
+$slider.addEventListener('click', coupang);
+$rightSlider.addEventListener('click', coupang);
+
+function coupang() {
+  window.location.href = 'https://link.coupang.com/a/TPqZ7';
+}
+
+

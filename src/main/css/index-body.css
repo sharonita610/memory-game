@@ -98,14 +98,11 @@
     align-self: flex-end !important;
     bottom: 12%;
     left: 2%;
-    /*border: 5px solid deepskyblue;*/
-    /*box-shadow: inset 1px 1px 10px 1px rgba(87, 113, 110, 0.31);*/
+
     border-radius: 5px;
 
     font-size: 30px;
     font-family: 'Gaegu', cursive;
-
-
 
     position: absolute;
     overflow: hidden;
