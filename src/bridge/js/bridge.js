@@ -167,3 +167,20 @@ const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
 
   })
 })
+
+const $infobtn = document.querySelector('.info-btn1');
+const $gameExplain =document.querySelector('#bridge-howto');
+
+
+console.log($infobtn);
+console.log($gameExplain);
+
+
+$infobtn.onclick = function() {
+  if ($gameExplain.style.display === 'none') {
+    $gameExplain.style.display = 'block';
+  } else {
+    $gameExplain.style.display = 'none';
+  }
+};
+

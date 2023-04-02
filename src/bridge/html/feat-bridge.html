@@ -127,7 +127,7 @@
 				<div class="main-game">
 					<div class="game-nav">
 						<div class="nav bridge-game">
-							<p>오징어게임에 참가한 당신! 게임을 해서 살아님으면 '456'억이 모두 당신 것입니다!</p>
+							<p id="title">◎오징어게임에 참가한 당신! 해마의 도움을 받아 '456억'의 주인공이 되세요◎</p>
 							<!--Bridge Game begin-->
 
 							<!--game box left-->
@@ -142,32 +142,32 @@
 							<div id="bridge-start">
 								<div class="bridge-container">
 									<div class="bridge-content">
-										<div class="start">
-											<div class="character" id="char-start">
-											</div>
-										</div>
+<!--										<div class="start">-->
+<!--											<div class="character" id="char-start">-->
+<!--											</div>-->
+<!--										</div>-->
 										<div class="bridge-pannel">
 											<div class="left" id="bridge-left-btn">
-												<button id="l1" class="glass left">시작</button>
+												<button id="l1" class="glass left"><p>시작</p></button>
 												<button id="l2" class="glass left"></button>
 												<button id="l3" class="glass left"></button>
 												<button id="l4" class="glass left"></button>
 												<button id="l5" class="glass left"></button>
-												<button id="l6" class="glass left">종료</button>
+												<button id="l6" class="glass left"><p>종료</p></button>
 											</div>
 											<div class="right" id="bridge-right-btn">
-												<button id="r1" class="glass right">시작</button>
+												<button id="r1" class="glass right"><p>시작</p></button>
 												<button id="r2" class="glass right"></button>
 												<button id="r3" class="glass right"></button>
 												<button id="r4" class="glass right"></button>
 												<button id="r5" class="glass right"></button>
-												<button id="r6" class="glass right">종료</button>
+												<button id="r6" class="glass right"><p>종료</p></button>
 											</div>
 										</div>
-										<div class="finish">
-											<div class="character" id="char-finish">
-											</div>
-										</div>
+<!--										<div class="finish">-->
+<!--											<div class="character" id="char-finish">-->
+<!--											</div>-->
+<!--										</div>-->
 									</div>
 								</div>
 							</div>
@@ -186,18 +186,21 @@
 								</a>
 							</li>
 							<li class="btn">
-								<button class="start-btn" id="info-btn1">
-									<span>클릭!</span><span>게임설명</span>
-									<div class="bridge-game-explain ">
-										<div id="bridge-howto"><br><br>
-											1. 유저는 시작 지점에서 게임을 시작합니다.<br>
-											2. 앞에 놓여진 다리의 왼쪽 또는 오른쪽 중 하나를 선택합니다.<br>
-											- 정답이라면 한 칸 앞으로 이동하고 바로 다음 선택을 합니다.<br>
-											- 오답이라면 도달한 단계와 상관 없이 처음으로 돌아가서 다시 시작해야합니다.<br>
-											3. 반복하여 종료 지점까지 도달한다면 성공입니다.<br>
-											4. 한 게임이 마칠 때까지 정답은 한 가지 이므로 앞서 누른 지점을 잊지마세요!<br>
+
+								<button class="start-btn info-btn1">
+									<span>클릭</span><span>게임 설명</span>
+
+										<div id="bridge-howto" style="display: none">
+											<p style="text-align: center; font-size: 20px">
+												★★★&nbsp;게임&nbsp;&nbsp;&nbsp;설명&nbsp;★★★</p><br>
+											▷ 유저는 시작 지점에서 게임을 시작합니다.<br>
+											▷ 앞에 놓여진 다리의 왼쪽 또는 오른쪽 중 하나를 선택합니다.<br>
+											&nbsp;&nbsp;→ 정답이라면 =<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☞ 한 칸 앞으로 이동하고 바로 다음 선택을 합니다.<br>
+											&nbsp;&nbsp;→ 오답이라면 = <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☞ 도달한 단계와 상관 없이 처음부터 다시 시작해야합니다.<br>
+											▷ 반복하여 종료 지점까지 도달한다면 성공입니다.<br>
+											▷ 한 게임이 마칠 때까지 정답은 한 가지 입니다.<br>앞서 누른 지점을 잊지마세요!<br>
 										</div>
-									</div>
+
 								</button>
 							</li>
 						</ul>
