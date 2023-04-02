@@ -167,7 +167,7 @@ const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
 
   })
 })
-
+// 하단 게임설명 버튼 이벤트
 const $infobtn = document.querySelector('.info-btn1');
 const $gameExplain =document.querySelector('#bridge-howto');
 
