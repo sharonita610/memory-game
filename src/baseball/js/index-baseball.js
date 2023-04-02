@@ -13,7 +13,7 @@ import user from "../../main/js/user.js";
         input: 0, // 유저가 입력한 숫자
         clearRound: 0, // 클리어한 라운드
         // maxRound: 8,
-        maxRound: 4,
+        maxRound: 8,
     }
 
 
@@ -51,7 +51,7 @@ import user from "../../main/js/user.js";
             }
         }
         // test
-        console.log(gameData.result);
+        // console.log(gameData.result);
     }
 
     // gameData.result 셋업
@@ -170,8 +170,6 @@ import user from "../../main/js/user.js";
 
     // 1-1. 결과 비교하기
     function checkResult() {
-
-        // asdfasdfasdf
         const list = gameData.inputNumbers;
         const result = gameData.result;
 
@@ -218,13 +216,17 @@ import user from "../../main/js/user.js";
             const $baseballLogo = document.querySelector('#baseball-logo .img');
 
             switch (gameData.clearRound) {
-                case 1:
+                case 3:
+                    // 
                     $baseballLogo.setAttribute('id', 'baseballLogo2');
                     break;
-                case 2:
+                case 5:
+                    // 
                     $baseballLogo.setAttribute('id', 'baseballLogo3');
                     break;
-                case 3:
+
+                case 8:
+                    //
                     $baseballLogo.setAttribute('id', 'baseballLogo4');
                     break;
             }
