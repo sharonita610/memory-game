@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu:wght@300&family=Hahmlet:wght@700&family=M+PLUS+1&family=Sunflower:wght@300;500&family=Yeon+Sung&display=swap');
 
 /*brige-game css begin*/
 .contains .contents .main-game .game-nav .bridge-game {
@@ -32,40 +32,28 @@
 
 }
 
-
 /*brige-game css begin*/
 
-/*게임판 중 가장 왼쪽 시작*/
-
-.contains .contents .main-game .game-nav .bridge-game #bridge-left {
-    /*flex: 1;*/
-
-    /*width: 10%;*/
-
-}
-
-/*게임판 중 가장 왼쪽 종료*/
 
 
 /*메인게임 시작*/
 
 .contains .contents .main-game .game-nav .bridge-game #bridge-start {
     width: 80%;
-    height: 100%;
+    height: 90%;
     /*background: white;*/
 }
 
 .contains .contents .main-game .game-nav .bridge-game #bridge-start .bridge-content{
     display: block;
-    background: url("../bridge-img/bridge-img-main.jpg") no-repeat;
+    /*background: url("../bridge-img/bridge-img-main.jpg") no-repeat;*/
     margin-top: 5%;
-    height: 0%;
+    height: 100%;
     width: 100%;
     padding: 20px;
     object-fit: contain;
 
     filter: drop-shadow(5px 10px 5px #000);
-
 }
 
 /*게임을 감싸는 전체 컨테이너*/
@@ -79,20 +67,24 @@
 
 
 }
-.contains .contents .main-game .game-nav .bridge-game p {
+.contains .contents .main-game .game-nav .bridge-game #title {
     height: 10%;
     position: absolute;
     display: block;
-    margin-left: 15%;
+    margin-left: 300px;
     padding-top: 10px;
     font-size: 25px;
+
+    font-family: 'Yeon Sung', cursive;
+
 }
 
 /*전체적인 틀 확인하기 위한 코드*/
 .content, .start, .finish, .character, .bridge-pannel, .left, .right {
     display: flex;
 
-    width: 100%;
+    /*border: 2px solid blue;*/
+    width:100%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -101,65 +93,26 @@
 .bridge-container .bridge-content {
     display: flex;
     flex-direction: row;
-
     width: 100%;
     height: 100%;
 
+    background: linear-gradient(-40deg, #121212, #070d35, #020738, #080227);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .start{
-    overflow: hidden;
-}
-
-#char-start, #char-finish {
-    width: 100px;
-    height: 100px;
-
-    border-radius: 50%;
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content  img {
-    width:100%;
-    height:100%;
-    border-radius: 50%;
-    object-fit:cover;
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .start #char-start{
-    display: flex;
-    margin-top: 680px;
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .finish #char-finish {
-    display: flex;
-    margin-top: 20px;
-}
-
-/*bridge-content 하위 클래스 3개 비율을 위해 생성함*/
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .start{
-    flex: 1;
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .bridge-pannel {
-    flex: 4;
-
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .finish {
-    flex: 1;
-
-}
 /*---------------------------------------------*/
-
 
 
 
@@ -169,11 +122,9 @@
     justify-content: center;
     justify-items: center;
 
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
     margin:  10px auto;
-
-    /*border: 2px solid black;*/
 
 }
 
@@ -190,55 +141,39 @@
 }
 
 
-/*노란판 속성*/
+/*징검다리 판 속성 시작*/
 .contains .contents .main-game .game-nav .bridge-game #bridge-start
 .bridge-container .bridge-content .bridge-pannel .glass {
     display: flex;
     align-items: center;
     align-content: center;
-    width: 100px;
+    width: 200px;
     height: 100px;
     border: 5px ridge rgba(19, 44, 81, 0.59);
-    border-radius: 50%;
+
     margin: auto;
-    box-shadow: rgba(141, 155, 169,59);
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .bridge-pannel .left , .right{
-    color: #fff;
-    padding-left: 25px;
-}
 
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .bridge-pannel button:active {
-    background-color: rgb(48, 70, 195);
-
-}
-.contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .bridge-pannel .glass:hover {
+    background: linear-gradient(40deg, #f0f2f9, #6c7ee6, #ebecf4, #86cce7);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
     cursor: pointer;
-    /*background-color: rgba(136, 212, 226, 0.44);*/
+
 }
 
 .contains .contents .main-game .game-nav .bridge-game #bridge-start
-.bridge-container .bridge-content .bridge-pannel .glass div {
+.bridge-container .bridge-content .bridge-pannel p{
+    color: #6579e6;
+    opacity: 0.8;
+    font-size: 1.5em;
+    font-family: 'Hahmlet', serif;
+    margin: 3px 0 0 65px;
+
 }
-
-
 
 /*메인게임 종료*/
 
 
-/*게임판 중 가장 오른쪽 시작*/
-.contains .contents .main-game .game-nav .bridge-game #bridge-right {
-    width: 10%;
-
-}
-
-/*게임판 중 가장 오른쪽 종료*/
-
-
-/*게임설명 버튼 속성 hovdr 시작*/
+/*게임설명 버튼 css시작*/
 #main .contains .contents .main-game  .bridge-game-explain  {
 
     width: 70%;
@@ -247,27 +182,27 @@
     position: relative;
 }
 
+
+
 #main .contains .contents .main-game .game-nav-sub .nav-sub
-.btn .bridge-game-explain #bridge-howto {
+.btn .info-btn1 #bridge-howto {
+    /*display: none;*/
     background: #dbebf1;
     opacity: 0.9;
+    border: 10px groove #5d7bf0;
     border-radius: 5%;
     width: 600px;
-    height: 500px;
+    height: 600px;
+
     position: absolute;
-    bottom: 300px;
-    right: 10px;
+    bottom: 200px;
+    right: 35px;
     font-weight: bold;
     color: #333333;
-    font-size: 18px;
-    display: none;
+    font-size: 1.5em;
     text-align: left;
+    font-family: 'Sunflower', sans-serif;
 
 }
+/*게임설명 버튼 css시작*/
 
-#main .contains .contents .main-game .game-nav-sub .nav-sub
-.btn .start-btn:hover .bridge-game-explain #bridge-howto {
-    display: block !important;
-
-}
-/*게임설명 버튼 속성 hover 종료*/

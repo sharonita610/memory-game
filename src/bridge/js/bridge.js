@@ -38,23 +38,26 @@ const $rightBtn = [...document.getElementById('bridge-right-btn').children];
 // 클릭했을 때 알람을 띄우는 함수 (왼쪽 다리, 테스트용)
 function clickLeftAlert() {
   alert("왼쪽 다리 클릭됨!");
+  return true;
 }
 
 // 클릭했을 때 알람을 띄우는 함수 (오른쪽 다리, 테스트용)
 function clickRightAlert() {
   alert("오른쪽 다리 클릭됨!");
+  return true;
+
 }
 
 // 왼쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
 $leftBtn.forEach($li => {
-  if (gameData.clearRound < 6) {
+  if (gameData.round <= 7) {
     $li.addEventListener('click', clickLeftAlert);
   }
 });
 
 // 오른쪽 다리 버튼 onclick 이벤트에 alert 띄우는 함수 추가하기
 $rightBtn.forEach($li => {
-  if (gameData.clearRound < 6) {
+  if (gameData.round <= 7) {
     $li.addEventListener('click', clickRightAlert);
   }
 });
@@ -115,14 +118,10 @@ function resetBridge() {
   // round 1단계로 초기화
   gameData.round = 1;
 }
+// 점수 배점
+//
 
-function endGame() {
-  if (gameData.round === 7) {
-    alert(`승리하셨습니다. \n 해마 포인트를 획득하셨습니다!\n${gameData.clickCount}번 만에 성공하였습니다.`);
-    return false;
-  }
-  return true;
-}
+
 
 const $leftBtnList = [...document.querySelector('#bridge-left-btn').children];
 const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
@@ -140,6 +139,13 @@ const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
       gameData.clickCount++;
 
       if (checkNum) {
+        if (gameData.round === 6) {
+          alert(`승리하셨습니다.\n${gameData.clickCount}번만에 성공하셨습니다\n 최종점수는 100점 입니다.`);
+
+        } else {
+          alert("※정답입니다!※\n\n한 칸 앞으로 이동했습니다! \n다음 다리를 선택하세요");
+        }
+
         // 나랑 짝꾹 클릭 x
         setDisabled($leftBtnList[gameData.round - 1]);
         setDisabled($rightBtnList[gameData.round - 1]);
@@ -148,16 +154,9 @@ const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
         removeDisabled($leftBtnList[gameData.round]);
         removeDisabled($rightBtnList[gameData.round]);
 
+
         // 라운드 올리기
         gameData.round++; //6 7
-
-        if (gameData.round <= 7) {
-          alert("정답입니다! 한 칸 앞으로 이동했습니다! \n    다음 옵션을 선택하세요");
-          if (gameData.round === 7) {
-            alert(`승리하셨습니다.\n${gameData.clickCount}번 만에 성공하였습니다.`);
-          }
-        }
-
       } else {
         alert(`    ※정답이 아닙니다※ \n 처음부터 다시 시작하세요!`);
         resetBridge();
@@ -165,5 +164,32 @@ const $rightBtnList = [...document.querySelector('#bridge-right-btn').children];
 
     }
 
-  })
+
 })
+});
+// 하단 게임설명 버튼 이벤트
+const $infobtn = document.querySelector('.info-btn1');
+const $gameExplain = document.querySelector('#bridge-howto');
+
+
+console.log($infobtn);
+console.log($gameExplain);
+
+
+$infobtn.onclick = function () {
+  if ($gameExplain.style.display === 'none') {
+    $gameExplain.style.display = 'block';
+  } else {
+    $gameExplain.style.display = 'none';
+  }
+};
+
+// <————————————— 광고 클릭 이벤트 —————————————> //
+const $slider = document.getElementById('slider');
+const $rightSlider = document.getElementById('right-slider');
+$slider.addEventListener('click', coupang);
+$rightSlider.addEventListener('click', coupang);
+
+function coupang() {
+  window.location.href = 'https://link.coupang.com/a/TPqZ7';
+}

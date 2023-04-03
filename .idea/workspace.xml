@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f62cb057-0446-41ae-98ee-17b2cfe08b41" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/css/bridge-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge-index-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/css/bridge.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/css/bridge.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/docs/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/html/feat-bridge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/js/bridge-info-btn.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bridge/js/bridge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bridge/js/bridge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card/css/card-index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/card-index-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/css/index-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/css/index-body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/card/css/index-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/css/index-card.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,29 +42,29 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Programming_academy/java_basic&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Programming_academy/js_study/7.DOM제어",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\memory-game" />
@@ -129,6 +124,7 @@
       <workItem from="1680079803190" duration="371000" />
       <workItem from="1680089959118" duration="14004000" />
       <workItem from="1680134621436" duration="17589000" />
+      <workItem from="1680443997135" duration="17198000" />
     </task>
     <servers />
   </component>
